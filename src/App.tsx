@@ -1,5 +1,11 @@
+import { Header } from './components/global/Header/Header';
+
 function App() {
-   return <h1 className="text-red-800">Bookmark</h1>;
+   return (
+      <>
+         <Header />
+      </>
+   );
 }
 
 export default App;

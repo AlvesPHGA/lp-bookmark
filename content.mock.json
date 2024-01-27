@@ -1,6 +1,68 @@
 {
-   "top": {
+   "section_01": {
       "title": "A Simple Bookmark Manager",
       "text": "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instanty. Try it free"
+   },
+
+   "section_02": {
+      "title": "Feature",
+      "text": "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go."
+   },
+
+   "tabs": {
+      "01": {
+         "title_tab": "Simple Bookmarking",
+         "title": "Bookmark in one click",
+         "text": "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites."
+      }
+   },
+
+   "section_03": {
+      "title": "Download the extension",
+      "text": "We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize."
+   },
+
+   "cards": {
+      "card_01": {
+         "title": "Add to Chrome",
+         "version": 62
+      },
+      "card_02": {
+         "title": "Add to Firefox",
+         "version": 55
+      },
+      "card_03": {
+         "title": "Add to Opera",
+         "version": 46
+      }
+   },
+
+   "section_04": {
+      "title": "Frequently Asked Questions",
+      "text": "Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us."
+   },
+
+   "questions": {
+      "question_01": {
+         "question": "What is Bookmark?",
+         "reply": "Duis a enim enim. Maecenas ut nisl eget sem laoreet accumsan. Duis venenatis at massa quis mollis. Cras at orci quis felis congue luctus in eu leo. Nunc urna turpis, fermentum a massa at, blandit porta nulla. Pellentesque nisl libero, tincidunt ac ante ut, aliquam egestas eros."
+      },
+      "question_02": {
+         "question": "How can I request a new browser?",
+         "reply": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum mi diam, ut pellentesque elit ullamcorper sit amet. Maecenas laoreet lacinia enim, a mollis eros congue ac. Duis eu sapien velit. Maecenas dictum ipsum mauris, convallis bibendum urna maximus porta."
+      },
+      "question_03": {
+         "question": "Is there a mobile app?",
+         "reply": "Proin eget rhoncus orci, eu tempor augue. Maecenas eu nisi facilisis, finibus nibh rutrum, scelerisque nisi. Nullam ut elit eu justo accumsan vulputate. Pellentesque semper tristique mi, at suscipit ligula auctor sed. Nullam viverra magna vitae urna gravida, ut facilisis lectus malesuada. Nam dictum mollis facilisis. Curabitur condimentum pretium tellus blandit posuere."
+      },
+      "question_04": {
+         "question": "What about other Chromium browsers?",
+         "reply": "Vestibulum pharetra eu ligula et porttitor. In aliquet pretium gravida. Mauris ipsum diam, lacinia sit amet vulputate ac, ultricies quis neque. In volutpat convallis lorem, eget faucibus enim ullamcorper eget. Maecenas et tortor non nisi venenatis mollis at id justo."
+      }
+   },
+
+   "section_05": {
+      "legend": "35,000+ already joined",
+      "title": "Stay up-to-date with what we're doing"
    }
 }

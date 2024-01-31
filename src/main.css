@@ -562,6 +562,14 @@ video {
   right: 248px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -588,6 +596,10 @@ video {
   height: 80%;
 }
 
+.h-\[426px\] {
+  height: 426px;
+}
+
 .w-\[1200px\] {
   width: 1200px;
 }
@@ -607,6 +619,10 @@ video {
 
 .w-\[796px\] {
   width: 796px;
+}
+
+.w-\[795px\] {
+  width: 795px;
 }
 
 .cursor-pointer {
@@ -641,6 +657,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-bl-\[184px\] {
+  border-bottom-left-radius: 184px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -671,6 +691,16 @@ video {
 
 .bg-\[\"url\(\'\$\{Screen\}\'\)\"\] {
   background-color: "url('${Screen}')";
+}
+
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#5368DF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(83 104 223 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\$\{Screen\}\)\] {

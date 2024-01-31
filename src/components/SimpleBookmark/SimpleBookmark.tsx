@@ -1,4 +1,5 @@
 import { CTA } from '../CTA/CTA';
+import { BackIllustration } from './BackIllustration';
 
 const cta = ['Chrome', 'Firefox'];
 
@@ -8,8 +9,9 @@ export interface ISimpleBM {
 }
 export function SimpleBookmark({ title, text }: ISimpleBM) {
    return (
-      <section className="w-full py-20">
-         <div className="w-[1200px] mx-auto">
+      <section className="w-full py-20 border border-red-600 relative">
+         <BackIllustration />
+         <div className={`w-[1200px] mx-auto py-20 border`}>
             <div className="w-[540px]">
                <h1 className="text-5xl font-medium">{title}</h1>
                <p className="text-grayishBlue my-7">{text}</p>

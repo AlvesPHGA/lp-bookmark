@@ -1,3 +1,5 @@
+import { Backblue } from './BackBlue';
+
 export interface IFeature {
    title: string;
    text: string;
@@ -5,8 +7,9 @@ export interface IFeature {
 
 export function Features({ title, text }: IFeature) {
    return (
-      <section className="py-10">
-         <div className="w-[1200px] mx-auto">
+      <section className="relative py-20">
+         <Backblue />
+         <div className="relative w-[1200px] mx-auto z-10">
             <div className="text-center w-[50%] mx-auto pb-5">
                <h2 className="text-3xl font-medium">{title}</h2>
                <p className="pt-6">{text}</p>

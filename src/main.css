@@ -558,16 +558,16 @@ video {
   position: relative;
 }
 
-.right-\[248px\] {
-  right: 248px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.right-\[248px\] {
+  right: 248px;
 }
 
 .mx-auto {
@@ -592,12 +592,12 @@ video {
   display: flex;
 }
 
-.h-\[80\%\] {
-  height: 80%;
-}
-
 .h-\[426px\] {
   height: 426px;
+}
+
+.h-\[80\%\] {
+  height: 80%;
 }
 
 .h-screen {
@@ -612,6 +612,14 @@ video {
   width: 540px;
 }
 
+.w-\[795px\] {
+  width: 795px;
+}
+
+.w-\[796px\] {
+  width: 796px;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -619,14 +627,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[796px\] {
-  width: 796px;
-}
-
-.w-\[795px\] {
-  width: 795px;
 }
 
 .cursor-pointer {
@@ -665,12 +665,12 @@ video {
   border-bottom-left-radius: 184px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-softRed {
@@ -678,9 +678,24 @@ video {
   border-color: hsl(0 94% 66% / var(--tw-border-opacity));
 }
 
-.border-red-600 {
+.border-veryDarkBlue {
   --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+  border-color: hsl(229 31% 21% / var(--tw-border-opacity));
+}
+
+.border-\[\#F7F7F7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(247 247 247 / var(--tw-border-opacity));
+}
+
+.border-\[\#5368DF\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(83 104 223 / var(--tw-border-opacity));
+}
+
+.bg-\[\#5368DF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(83 104 223 / var(--tw-bg-opacity));
 }
 
 .bg-softRed {
@@ -693,54 +708,32 @@ video {
   background-color: hsl(229 31% 21% / var(--tw-bg-opacity));
 }
 
-.bg-\[\"url\(\'\$\{Screen\}\'\)\"\] {
-  background-color: "url('${Screen}')";
-}
-
-.bg-red-50 {
+.bg-grayishBlue {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+  background-color: hsl(229 8% 60% / var(--tw-bg-opacity));
 }
 
-.bg-\[\#5368DF\] {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(83 104 223 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\$\{Screen\}\)\] {
-  background-image: url(${Screen});
+.bg-\[\#ccc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\$\{Screen\}\'\)\] {
-  background-image: url('${Screen}');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/assets\/illustration-hero\.svg\'\)\] {
-  background-image: url('../../assets/illustration-hero.svg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/\.\.\/assets\/illustration-hero\.svg\'\)\] {
-  background-image: url('../../../assets/illustration-hero.svg');
+.bg-\[\#F7F7F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/src\/assets\/illustration-hero\.svg\'\)\] {
   background-image: url('./src/assets/illustration-hero.svg');
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
 .bg-contain {
   background-size: contain;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-right {
-  background-position: right;
 }
 
 .bg-no-repeat {
@@ -831,12 +824,42 @@ video {
   margin-right: 0px;
 }
 
+.hover\:border-veryDarkBlue:hover {
+  --tw-border-opacity: 1;
+  border-color: hsl(229 31% 21% / var(--tw-border-opacity));
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:text-softRed:hover {
   --tw-text-opacity: 1;
   color: hsl(0 94% 66% / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#f7f7f7\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(247 247 247 / var(--tw-text-opacity));
+}
+
+.hover\:text-veryDarkBlue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(229 31% 21% / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#5368DF\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(83 104 223 / var(--tw-text-opacity));
+}
+
+.hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }

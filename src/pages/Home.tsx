@@ -9,7 +9,7 @@ import { Features } from '../components/Feature/Feature';
 export function Home() {
    console.log(SBM);
    return (
-      <div className="h-screen">
+      <div>
          <SimpleBookmark {...SBM} />
          <Features {...Feature} />
       </div>

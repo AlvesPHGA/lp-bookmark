@@ -450,6 +450,18 @@ video {
   line-height: 1.75rem;
 }
 
+h1,
+   h2,
+   h3 {
+  --tw-text-opacity: 1;
+  color: hsl(229 31% 21% / var(--tw-text-opacity));
+}
+
+p {
+  --tw-text-opacity: 1;
+  color: hsl(229 8% 60% / var(--tw-text-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -629,6 +641,22 @@ video {
   width: 100%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -673,14 +701,9 @@ video {
   border-width: 2px;
 }
 
-.border-softRed {
+.border-\[\#5368DF\] {
   --tw-border-opacity: 1;
-  border-color: hsl(0 94% 66% / var(--tw-border-opacity));
-}
-
-.border-veryDarkBlue {
-  --tw-border-opacity: 1;
-  border-color: hsl(229 31% 21% / var(--tw-border-opacity));
+  border-color: rgb(83 104 223 / var(--tw-border-opacity));
 }
 
 .border-\[\#F7F7F7\] {
@@ -688,14 +711,19 @@ video {
   border-color: rgb(247 247 247 / var(--tw-border-opacity));
 }
 
-.border-\[\#5368DF\] {
+.border-softRed {
   --tw-border-opacity: 1;
-  border-color: rgb(83 104 223 / var(--tw-border-opacity));
+  border-color: hsl(0 94% 66% / var(--tw-border-opacity));
 }
 
 .bg-\[\#5368DF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(83 104 223 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F7F7F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-softRed {
@@ -706,26 +734,6 @@ video {
 .bg-veryDarkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(229 31% 21% / var(--tw-bg-opacity));
-}
-
-.bg-grayishBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(229 8% 60% / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ccc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#F7F7F7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/src\/assets\/illustration-hero\.svg\'\)\] {
@@ -755,6 +763,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -775,9 +788,13 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-5xl {
@@ -834,33 +851,23 @@ video {
   border-color: hsl(229 31% 21% / var(--tw-border-opacity));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-transparent:hover {
-  background-color: transparent;
+.hover\:text-\[\#5368DF\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(83 104 223 / var(--tw-text-opacity));
 }
 
 .hover\:text-softRed:hover {
   --tw-text-opacity: 1;
   color: hsl(0 94% 66% / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#f7f7f7\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(247 247 247 / var(--tw-text-opacity));
-}
-
-.hover\:text-veryDarkBlue:hover {
-  --tw-text-opacity: 1;
-  color: hsl(229 31% 21% / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#5368DF\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(83 104 223 / var(--tw-text-opacity));
 }
 
 .hover\:transition-all:hover {

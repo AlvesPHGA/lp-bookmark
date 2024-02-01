@@ -1,12 +1,14 @@
+const titleTab = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
+
 export function Tab() {
    return (
       <div className="pt-5 w-full border">
          <div className="w-fit mx-auto border-b border-b-grayishBlue">
-            <button className="text-lg border px-10 py-3">
-               Simple Bookmark
-            </button>
-            <button className="px-10 text-lg">Speedy Searching</button>
-            <button className="text-lg px-10">Easy Sharing</button>
+            {titleTab.map((title, index) => (
+               <button key={index} className="text-lg px-10 py-3">
+                  {title}
+               </button>
+            ))}
          </div>
          <div className="mt-14 flex items-center justify-between">
             <div className="w-[600px] h-[400px] bg-[url(./src/assets/illustration-features-tab-1.svg)] bg-cover bg-center rounded-lg"></div>

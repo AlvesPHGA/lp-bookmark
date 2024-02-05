@@ -13,6 +13,10 @@
       @apply text-veryDarkBlue;
    }
 
+   h2 {
+      @apply text-3xl font-medium;
+   }
+
    p {
       @apply text-grayishBlue;
    }

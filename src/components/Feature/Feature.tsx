@@ -1,6 +1,8 @@
 import { Backblue } from './BackBlue';
 import { Tab } from './Tab';
 
+import { Tabs } from '../../../content.mock.json';
+
 export interface IFeature {
    title: string;
    text: string;
@@ -15,7 +17,7 @@ export function Features({ title, text }: IFeature) {
                <h2 className="text-3xl font-medium">{title}</h2>
                <p className="pt-6">{text}</p>
             </div>
-            <Tab />
+            <Tab {...Tabs} />
          </div>
       </section>
    );

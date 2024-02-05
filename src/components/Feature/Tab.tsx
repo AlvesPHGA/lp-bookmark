@@ -1,6 +1,11 @@
 const titleTab = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
 
-export function Tab() {
+export interface ITab {
+   title: string;
+   text: string;
+}
+
+export function Tab({ title, text }: ITab) {
    return (
       <div className="pt-5 w-full border">
          <div className="w-fit mx-auto border-b border-b-grayishBlue">

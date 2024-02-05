@@ -7,10 +7,13 @@ export interface ITab {
 
 export function Tab({ title, text }: ITab) {
    return (
-      <div className="pt-5 w-full border">
+      <div className="pt-5 w-full">
          <div className="w-fit mx-auto border-b border-b-grayishBlue">
             {titleTab.map((title, index) => (
-               <button key={index} className="text-lg px-10 py-3">
+               <button
+                  key={index}
+                  className="text-grayishBlue text-lg px-10 py-3 cursor-pointer transition-all hover:text-softRed"
+               >
                   {title}
                </button>
             ))}

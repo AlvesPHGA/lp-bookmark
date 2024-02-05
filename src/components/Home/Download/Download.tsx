@@ -15,7 +15,7 @@ export function Download({ title, text }: IDown) {
                <h2>{title}</h2>
                <p className="py-10">{text}</p>
             </div>
-            <div>
+            <div className="w-full flex justify-between">
                {Cards.map((card) => (
                   <Card key={card.title} {...card} />
                ))}

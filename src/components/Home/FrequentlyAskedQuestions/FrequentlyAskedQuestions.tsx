@@ -1,10 +1,15 @@
-export function FrequentlyAskedQuestions() {
+export interface IFAQ {
+   title: string;
+   text: string;
+}
+
+export function FrequentlyAskedQuestions({ title, text }: IFAQ) {
    return (
-      <section>
+      <section className="py-20">
          <div className="w-[1200px] mx-auto">
-            <div>
-               <h2></h2>
-               <p></p>
+            <div className="w-[50%] text-center mx-auto mb-10">
+               <h2>{title}</h2>
+               <p className="mt-7">{text}</p>
             </div>
          </div>
       </section>

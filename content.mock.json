@@ -34,17 +34,17 @@
    "Cards": [
       {
          "image": "./src/assets/logo-chrome.svg",
-         "title": "Add to Chrome",
+         "title": "Chrome",
          "version": 62
       },
       {
          "image": "./src/assets/logo-firefox.svg",
-         "title": "Add to Firefox",
+         "title": "Firefox",
          "version": 55
       },
       {
          "image": "./src/assets/logo-opera.svg",
-         "title": "Add to Opera",
+         "title": "Opera",
          "version": 46
       }
    ],

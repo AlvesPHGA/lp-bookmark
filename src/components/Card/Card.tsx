@@ -5,11 +5,16 @@ export interface ICard {
 }
 
 export function Card({ image, title, version }: ICard) {
+   function card(title: string) {
+      if (title === 'Chrome') return 'bottom-[50px]';
+      if (title === 'Opera') return 'top-[50px]';
+   }
+
    return (
-      <div className="relative p-5 pt-10 rounded-xl shadow-lg">
+      <div className={`relative p-5 pt-10 rounded-xl shadow-lg ${card(title)}`}>
          <img className="mx-auto" src={image} alt="" />
          <div className="text-center mt-5 mb-12">
-            <h3 className="text-xl font-medium mb-1">{title}</h3>
+            <h3 className="text-xl font-medium mb-1">Add to {title}</h3>
             <span className="text-sm text-grayishBlue">
                Minimum version {version}
             </span>

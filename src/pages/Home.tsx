@@ -11,6 +11,11 @@ import { Features } from '../components/Feature/Feature';
 import { Download } from '../components/Home/Download/Download';
 import { FrequentlyAskedQuestions } from '../components/Home/FrequentlyAskedQuestions/FrequentlyAskedQuestions';
 
+export interface IDefault {
+   title: string;
+   text: string;
+}
+
 export function Home() {
    return (
       <div>

@@ -1,13 +1,14 @@
 import { QuestionsList } from './Questions';
 
 import { Questions } from '../../../../content.mock.json';
+import { IDefault } from '../../../pages/Home';
 
-export interface IFAQ {
-   title: string;
-   text: string;
-}
+// export interface IFAQ {
+//    title: string;
+//    text: string;
+// }
 
-export function FrequentlyAskedQuestions({ title, text }: IFAQ) {
+export function FrequentlyAskedQuestions({ title, text }: IDefault) {
    return (
       <section className="py-20">
          <div className="w-[1200px] mx-auto">

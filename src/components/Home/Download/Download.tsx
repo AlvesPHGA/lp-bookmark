@@ -1,13 +1,14 @@
 import { Cards } from '../../../../content.mock.json';
+import { IDefault } from '../../../pages/Home';
 
 import { Card } from '../../Card/Card';
 
-export interface IDown {
-   title: string;
-   text: string;
-}
+// export interface IDown {
+//    title: string;
+//    text: string;
+// }
 
-export function Download({ title, text }: IDown) {
+export function Download({ title, text }: IDefault) {
    return (
       <section className="py-20">
          <div className="w-[1200px] mx-auto">

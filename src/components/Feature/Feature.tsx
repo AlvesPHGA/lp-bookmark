@@ -2,13 +2,14 @@ import { Backblue } from './BackBlue';
 import { Tab } from './Tab';
 
 import { Tabs } from '../../../content.mock.json';
+import { IDefault } from '../../pages/Home';
 
 export interface IFeature {
    title: string;
    text: string;
 }
 
-export function Features({ title, text }: IFeature) {
+export function Features({ title, text }: IDefault) {
    return (
       <section className="relative py-20">
          <Backblue />

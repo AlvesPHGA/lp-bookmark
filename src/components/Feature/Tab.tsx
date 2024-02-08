@@ -1,11 +1,13 @@
+import { IDefault } from '../../pages/Home';
+
 const titleTab = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
 
-export interface ITab {
-   title: string;
-   text: string;
-}
+// export interface ITab {
+//    title: string;
+//    text: string;
+// }
 
-export function Tab({ title, text }: ITab) {
+export function Tab({ title, text }: IDefault) {
    return (
       <div className="pt-5 w-full">
          <div className="w-fit mx-auto border-b border-b-grayishBlue">

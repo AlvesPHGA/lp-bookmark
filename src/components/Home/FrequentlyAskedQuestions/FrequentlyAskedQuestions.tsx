@@ -1,5 +1,7 @@
 import { QuestionsList } from './Questions';
 
+import { Questions } from '../../../../content.mock.json';
+
 export interface IFAQ {
    title: string;
    text: string;
@@ -13,7 +15,11 @@ export function FrequentlyAskedQuestions({ title, text }: IFAQ) {
                <h2>{title}</h2>
                <p className="mt-7">{text}</p>
             </div>
-            <QuestionsList />
+            <dl className="w-[50%] mx-auto">
+               {Questions.map((q) => (
+                  <QuestionsList key={q.question} {...q} />
+               ))}
+            </dl>
          </div>
       </section>
    );

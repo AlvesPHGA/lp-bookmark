@@ -1,3 +1,5 @@
+import { QuestionsList } from './Questions';
+
 export interface IFAQ {
    title: string;
    text: string;
@@ -11,6 +13,7 @@ export function FrequentlyAskedQuestions({ title, text }: IFAQ) {
                <h2>{title}</h2>
                <p className="mt-7">{text}</p>
             </div>
+            <QuestionsList />
          </div>
       </section>
    );

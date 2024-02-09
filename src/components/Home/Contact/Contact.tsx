@@ -1,3 +1,5 @@
+import { Input } from '../../Form/Input/Input';
+
 export interface IContact {
    sutitle: string;
    title: string;
@@ -13,6 +15,7 @@ export function Contact({ sutitle, title }: IContact) {
                </p>
                <h2 className="text-white mt-5">{title}</h2>
             </div>
+            <Input />
          </div>
       </section>
    );

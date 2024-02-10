@@ -1,23 +1,4 @@
-@tailwind base;
+@import './styles/base.css';
+
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-   * {
-      @apply text-lg font-rubik;
-   }
-
-   h1,
-   h2,
-   h3 {
-      @apply text-veryDarkBlue;
-   }
-
-   h2 {
-      @apply text-3xl font-medium;
-   }
-
-   p {
-      @apply text-grayishBlue;
-   }
-}

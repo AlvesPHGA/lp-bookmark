@@ -1,1 +1,13 @@
 @tailwind components;
+
+.backBlue {
+   @apply absolute bottom-0 bg-[#5368DF] z-0;
+}
+
+.backBlue_right {
+   @apply w-[795px] h-[426px] right-0 rounded-bl-[184px];
+}
+
+.backBlue_left {
+   @apply w-[900px] h-[400px] left-0 rounded-br-[184px];
+}

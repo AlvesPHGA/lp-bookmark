@@ -3,6 +3,7 @@ import { Tab } from './Tab';
 
 import { Tabs } from '../../../content.mock.json';
 import { IDefault } from '../../pages/Home';
+import { Content } from '../global/Content/Content';
 
 export interface IFeature {
    title: string;
@@ -14,10 +15,7 @@ export function Features({ title, text }: IDefault) {
       <section className="relative py-20">
          <Backblue />
          <div className="relative w-[1200px] mx-auto z-10">
-            <div className="text-center w-[50%] mx-auto pb-5">
-               <h2>{title}</h2>
-               <p className="pt-6">{text}</p>
-            </div>
+            <Content title={title} text={text} />
             <Tab {...Tabs} />
          </div>
       </section>

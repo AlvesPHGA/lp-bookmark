@@ -1,4 +1,3 @@
-import { Backblue } from './BackBlue';
 import { Tab } from './Tab';
 
 import { Tabs } from '../../../content.mock.json';

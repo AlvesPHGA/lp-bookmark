@@ -1,4 +1,4 @@
-import { IDefault } from '../../pages/Home';
+// import { IDefault } from '../../../pages/Home';
 
 const titleTab = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
 
@@ -7,7 +7,7 @@ const titleTab = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
 //    text: string;
 // }
 
-export function Tab({ title, text }: IDefault) {
+export function Tab() {
    return (
       <div className="pt-5 w-full">
          <div className="w-fit mx-auto border-b border-b-grayishBlue">

@@ -1,6 +1,6 @@
-import { IDefault } from '../../pages/Home';
-import { CTA } from '../CTA/CTA';
-import { BackBlue } from '../global/BackBlue/BackBlue';
+import { IDefault } from '../../../pages/Home';
+import { CTA } from '../../CTA/CTA';
+import { BackBlue } from '../../global/BackBlue/BackBlue';
 import { BackIllustration } from './BackIllustration';
 
 const cta = ['Chrome', 'Firefox'];

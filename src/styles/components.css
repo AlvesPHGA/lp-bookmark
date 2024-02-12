@@ -1,5 +1,17 @@
 @tailwind components;
 
+.__button {
+   @apply border-softRed border-2 text-white bg-softRed hover:text-softRed hover:bg-white transition-all;
+}
+
+.__loginBtn {
+   @apply uppercase font-medium  px-7 py-1 rounded tracking-[0.1em];
+}
+
+.__contactBtn {
+   @apply w-fit px-5 py-2  text-base rounded-md;
+}
+
 .backBlue {
    @apply absolute bottom-0 bg-[#5368DF] z-0;
 }

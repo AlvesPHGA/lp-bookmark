@@ -1,7 +1,9 @@
 export function Button({ legend }) {
-   return (
-      <button className="uppercase border-2 border-softRed font-medium text-white bg-softRed px-7 py-1 rounded tracking-[0.1em] hover:text-softRed hover:bg-white">
-         {legend}
-      </button>
-   );
+   const element = document.querySelectorAll('.__button');
+   element.forEach((item) => {
+      item.innerHTML === 'Login'
+         ? item.classList.add('__loginBtn')
+         : item.classList.add('__contactBtn');
+   });
+   return <button className="__button">{legend}</button>;
 }

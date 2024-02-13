@@ -23,3 +23,19 @@
 .backBlue_left {
    @apply w-[900px] h-[400px] left-0 rounded-br-[184px];
 }
+
+.__question {
+   @apply relative z-10 mb-5 text-xl text-veryDarkBlue flex justify-between items-center cursor-pointer hover:text-softRed transition-all;
+}
+
+.__reply {
+   @apply w-full pr-2;
+}
+
+.__reply-invisible {
+   @apply text-lg text-grayishBlue absolute left-0 top-0 z-0 opacity-0;
+}
+
+.__reply-visible {
+   @apply static mb-4 top-10 transition delay-[.05] animate-openShow;
+}

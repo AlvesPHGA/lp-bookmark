@@ -15,7 +15,8 @@
       @apply text-3xl font-medium;
    }
 
-   p {
+   p,
+   dd {
       @apply text-grayishBlue;
    }
 }

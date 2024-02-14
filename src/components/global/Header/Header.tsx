@@ -1,5 +1,5 @@
 import Logo from '../../../assets/logo-bookmark.svg';
-import { Button } from '../../Button/Button';
+// import { Button } from '../../Button/Button';
 import { Nav } from '../../Nav/Nav';
 
 export function Header() {
@@ -9,7 +9,8 @@ export function Header() {
             <img src={Logo} alt="" />
             <div className="flex items-center gap-10">
                <Nav />
-               <Button legend="Login" />
+               <button className="__button btn__login">Login</button>
+               {/* <Button legend="Login" /> */}
             </div>
          </div>
       </header>

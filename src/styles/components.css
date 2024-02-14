@@ -4,11 +4,11 @@
    @apply border-softRed border-2 text-white bg-softRed hover:text-softRed hover:bg-white transition-all;
 }
 
-.__loginBtn {
+.btn__login {
    @apply uppercase font-medium  px-7 py-1 rounded tracking-[0.1em];
 }
 
-.__contactBtn {
+.btn__contact {
    @apply w-fit px-5 py-2  text-base rounded-md;
 }
 
@@ -37,5 +37,5 @@
 }
 
 .__reply-visible {
-   @apply static mb-4 top-10 transition delay-[.05] animate-openShow;
+   @apply static mb-4 top-10 transition delay-[.02] animate-openShow;
 }

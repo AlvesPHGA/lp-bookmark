@@ -1,4 +1,4 @@
-import { Button } from '../../Button/Button';
+// import { Button } from '../../Button/Button';
 import { Input } from '../../Form/Input/Input';
 
 export interface IContact {
@@ -18,7 +18,8 @@ export function Contact({ sutitle, title }: IContact) {
             </div>
             <form className="w-[40%] mx-auto mt-10 flex justify-between">
                <Input />
-               <Button legend="Contact Us" />
+               <button className="__button btn__contact">Contact Us</button>
+               {/* <Button legend="Contact Us" /> */}
             </form>
          </div>
       </section>

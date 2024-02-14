@@ -39,8 +39,8 @@ export default {
             },
          },
          animation: {
-            openShow: 'open 0.6s ease-in-out',
-            closeShow: 'close 0.3s linear',
+            openShow: 'open 0.3s ease-in-out',
+            closeShow: 'close 0.2s linear',
          },
       },
    },

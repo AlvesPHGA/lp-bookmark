@@ -2,6 +2,8 @@
 
 import { ContentTab } from './ContentTab';
 
+import { Content_Tabs as Contents } from '../../../../content.mock.json';
+
 const titleTab = ['Simple Bookmark', 'Speedy Searching', 'Easy Sharing'];
 
 // export interface ITab {
@@ -22,7 +24,9 @@ export function Tab() {
                </button>
             ))}
          </div>
-         <ContentTab />
+         {Contents.map((content) => (
+            <ContentTab key={content.title} {...content} />
+         ))}
       </div>
    );
 }

@@ -41,5 +41,5 @@
 }
 
 .__active-tab {
-   @apply flex;
+   @apply block;
 }

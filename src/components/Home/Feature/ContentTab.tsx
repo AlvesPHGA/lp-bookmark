@@ -1,8 +1,16 @@
-import { IDefault } from '../../../pages/Home';
+interface ContentTabProps {
+   title: string;
+   text: string;
+   isActive: boolean;
+}
 
-export function ContentTab({ title, text }: IDefault) {
+export function ContentTab({ title, text, isActive }: ContentTabProps) {
    return (
-      <div className="__default-tab __content-tab __active-tab">
+      <div
+         className={`__default-tab __content-tab __active-tab ${
+            isActive ? 'activeTabContent' : ''
+         }`}
+      >
          <div className="flex mt-14 items-center justify-between">
             <div className="w-[600px] h-[400px] bg-[url(./src/assets/illustration-features-tab-1.svg)] bg-cover bg-center rounded-lg"></div>
             <div className="w-[500px]">

@@ -1,14 +1,17 @@
 interface ContentTabProps {
    title: string;
    text: string;
+   image: string;
    isActive: boolean;
 }
 
-export function ContentTab({ title, text, isActive }: ContentTabProps) {
+export function ContentTab({ title, text, image, isActive }: ContentTabProps) {
    return (
       <div className={` ${isActive ? 'block' : 'hidden'}`}>
          <div className="flex mt-14 items-center justify-between">
-            <div className="w-[600px] h-[400px] bg-[url(./src/assets/illustration-features-tab-1.svg)] bg-cover bg-center rounded-lg"></div>
+            <div className={`w-[600px] h-[400px] border rounded-lg`}>
+               <img src={image} alt={title} className="w-full" />
+            </div>
             <div className="w-[500px]">
                <h3 className="text-3xl font-medium">{title}</h3>
                <p className="my-8">{text}</p>

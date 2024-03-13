@@ -25,16 +25,16 @@ export function Contact({ sutitle, title }: IContact) {
       }
    }
 
-   function handleBlur({ target }) {
-      validField(target.value);
+   function handleBlur(ev: React.FocusEvent<HTMLInputElement>) {
+      validField(ev.target.value);
    }
 
-   function handleChange({ target }) {
-      if (error) validField(target.value);
-      setEmail(target.value);
+   function handleChange(ev: React.FocusEvent<HTMLInputElement>) {
+      if (error) validField(ev.target.value);
+      setEmail(ev.target.value);
    }
 
-   function handleSubmit(ev) {
+   function handleSubmit(ev: React.FormEvent) {
       ev.preventDefault();
       if (email.length > 3 && validField(email)) {
          alert('Dados enviados com sucesso');

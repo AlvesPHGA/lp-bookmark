@@ -1,6 +1,5 @@
 import { IDefault } from '../../../pages/Home';
 import { CTA } from '../../CTA/CTA';
-import { BackBlue } from '../../global/BackBlue/BackBlue';
 import { BackIllustration } from './BackIllustration';
 
 const cta = ['Chrome', 'Firefox'];
@@ -12,7 +11,7 @@ const cta = ['Chrome', 'Firefox'];
 export function SimpleBookmark({ title, text }: IDefault) {
    return (
       <section className="__simpleBookmarkManager relative w-full py-20">
-         <BackBlue />
+         <div className="absolute w-[795px] h-[426px] right-0 rounded-bl-[184px] bottom-0 bg-[#5368DF] z-0"></div>
          <BackIllustration />
          <div className={`w-[1200px] mx-auto py-20`}>
             <div className="w-[540px]">

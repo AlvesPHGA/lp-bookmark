@@ -9,7 +9,7 @@ export function ContentTab({ title, text, image, isActive }: ContentTabProps) {
    return (
       <div className={` ${isActive ? 'block' : 'hidden'}`}>
          <div className="flex mt-14 items-center justify-between">
-            <div className={`w-[600px] h-[400px] border rounded-lg`}>
+            <div className={`w-[600px] h-[400px] rounded-lg`}>
                <img src={image} alt={title} className="w-full" />
             </div>
             <div className="w-[500px]">

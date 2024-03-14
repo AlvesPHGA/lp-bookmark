@@ -1,4 +1,4 @@
-export function CTA({ legend }) {
+export function CTA({ legend }: { legend: string }) {
    return (
       <a
          href=""

@@ -4,26 +4,6 @@
    @apply border-softRed border-2 text-white bg-softRed hover:text-softRed hover:bg-white transition-all;
 }
 
-.btn__login {
-   @apply uppercase font-medium  px-7 py-1 rounded tracking-[0.1em];
-}
-
-.btn__contact {
-   @apply w-fit px-5 py-2  text-base rounded-md;
-}
-
-.backBlue {
-   @apply absolute bottom-0 bg-[#5368DF] z-0;
-}
-
-.backBlue_right {
-   @apply w-[795px] h-[426px] right-0 rounded-bl-[184px];
-}
-
-.backBlue_left {
-   @apply w-[900px] h-[400px] left-0 rounded-br-[184px];
-}
-
 .__question {
    @apply relative z-10 mb-5 text-xl text-veryDarkBlue flex justify-between items-center cursor-pointer hover:text-softRed transition-all;
 }

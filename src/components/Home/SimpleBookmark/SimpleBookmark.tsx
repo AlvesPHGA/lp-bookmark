@@ -5,10 +5,6 @@ import { BackIllustration } from './BackIllustration';
 
 const cta = ['Chrome', 'Firefox'];
 
-// export interface ISimpleBM {
-//    title: string;
-//    text: string;
-// }
 export function SimpleBookmark({ title, text }: IDefault) {
    return (
       <section className="__simpleBookmarkManager relative w-full py-20">

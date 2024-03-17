@@ -1,5 +1,6 @@
 import React from 'react';
 import { Input } from '../../Form/Input/Input';
+import { Button } from '../../Form/Button/Button';
 
 export interface IContact {
    sutitle: string;
@@ -65,9 +66,9 @@ export function Contact({ sutitle, title }: IContact) {
                   isError={error}
                   onBlur={handleBlur}
                />
-               <button className="__button w-fit px-5 py-2  text-base rounded-md h-[50px]">
+               <Button className="__button w-fit px-5 py-2  text-base rounded-md h-[50px]">
                   Contact Us
-               </button>
+               </Button>
             </form>
          </div>
       </section>

@@ -1,13 +1,10 @@
 import { ReactSVG } from 'react-svg';
 import iconError from '../../../assets/icon-error.svg';
+import React from 'react';
 
-interface InputProps {
-   value: string;
-   onChange: React.ChangeEvent<HTMLInputElement>;
+type InputProps = React.ComponentProps<'input'> & {
    name: string;
-   isError: boolean;
-   onBlur: React.FocusEvent<HTMLInputElement>;
-}
+};
 
 export function Input({ value, onChange, name, isError, onBlur }: InputProps) {
    return (

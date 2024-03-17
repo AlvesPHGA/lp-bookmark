@@ -25,10 +25,6 @@ export function Contact({ sutitle, title }: IContact) {
       }
    }
 
-   function handleBlur(ev: React.FocusEvent<HTMLInputElement>) {
-      validField(ev.target.value);
-   }
-
    function handleChange(ev: React.ChangeEvent<HTMLInputElement>) {
       if (error) validField(ev.target.value);
       setEmail(ev.target.value);
@@ -64,7 +60,7 @@ export function Contact({ sutitle, title }: IContact) {
                   onChange={handleChange}
                   name="email"
                   isError={error}
-                  onBlur={handleBlur}
+                  onBlur={(event) => validField(event.currentTarget.value)}
                />
                <Button className="__button w-fit px-5 py-2  text-base rounded-md h-[50px]">
                   Contact Us

@@ -28,7 +28,7 @@ export function Contact({ sutitle, title }: IContact) {
       validField(ev.target.value);
    }
 
-   function handleChange(ev: React.FocusEvent<HTMLInputElement>) {
+   function handleChange(ev: React.ChangeEvent<HTMLInputElement>) {
       if (error) validField(ev.target.value);
       setEmail(ev.target.value);
    }

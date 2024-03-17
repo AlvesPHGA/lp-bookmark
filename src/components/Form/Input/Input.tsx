@@ -1,7 +1,15 @@
 import { ReactSVG } from 'react-svg';
 import iconError from '../../../assets/icon-error.svg';
 
-export function Input({ value, onChange, name, isError, onBlur }) {
+interface InputProps {
+   value: string;
+   onChange: React.ChangeEvent<HTMLInputElement>;
+   name: string;
+   isError: boolean;
+   onBlur: React.FocusEvent<HTMLInputElement>;
+}
+
+export function Input({ value, onChange, name, isError, onBlur }: InputProps) {
    return (
       <div
          className={`relative w-[68%]  border-2 border-[#5368DF] rounded-md ${

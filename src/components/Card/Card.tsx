@@ -1,3 +1,5 @@
+import { Button } from '../Form/Button/Button';
+
 export interface ICard {
    image: string;
    title: string;
@@ -20,9 +22,9 @@ export function Card({ image, title, version }: ICard) {
             </span>
          </div>
          <div>
-            <button className="border-2 border-[#5368DF] px-6 py-2 rounded text-base bg-[#5368DF] text-white hover:bg-transparent hover:text-[#5368DF] transition-all">
+            <Button className="border-2 border-[#5368DF] px-6 py-2 rounded text-base bg-[#5368DF] text-white hover:bg-transparent hover:text-[#5368DF] transition-all">
                Add & Install Extesion
-            </button>
+            </Button>
          </div>
          <div className="absolute w-full h-1 bottom-[5rem] bg-[url('./src/assets/bg-dots.svg')] left-0"></div>
       </div>

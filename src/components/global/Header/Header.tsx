@@ -1,4 +1,5 @@
 import Logo from '../../../assets/logo-bookmark.svg';
+import { Button } from '../../Form/Button/Button';
 import { Nav } from '../../Nav/Nav';
 
 export function Header() {
@@ -8,9 +9,9 @@ export function Header() {
             <img src={Logo} alt="" />
             <div className="flex items-center gap-10">
                <Nav />
-               <button className="__button uppercase font-medium  px-7 py-1 rounded tracking-[0.1em]">
+               <Button className="__button uppercase font-medium  px-7 py-1 rounded tracking-[0.1em]">
                   Login
-               </button>
+               </Button>
             </div>
          </div>
       </header>

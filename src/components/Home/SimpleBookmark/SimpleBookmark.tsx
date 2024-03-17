@@ -1,5 +1,5 @@
 import { IDefault } from '../../../pages/Home';
-import { CTA } from '../../CTA/CTA';
+import { CTA } from '../../UI/CTA/CTA';
 import { BackBlue } from '../../UI/BackBlue/BackBlue';
 import { BackIllustration } from './BackIllustration';
 

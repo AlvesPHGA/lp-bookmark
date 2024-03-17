@@ -1,4 +1,4 @@
-import { CTA } from '../../CTA/CTA';
+import { CTA } from '../../UI/CTA/CTA';
 
 interface ContentTabProps {
    title: string;

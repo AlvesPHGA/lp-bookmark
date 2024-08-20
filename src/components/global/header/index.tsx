@@ -1,11 +1,12 @@
 import { Container } from '../componentsGlobal';
+import Nav from './nav';
 
 export default function Header() {
    return (
-      <header>
+      <header className="py-5">
          <Container>
             <div>
-               <nav></nav>
+               <Nav />
                <button></button>
             </div>
          </Container>

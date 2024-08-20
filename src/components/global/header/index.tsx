@@ -1,12 +1,14 @@
+import { Container } from '../componentsGlobal';
+
 export default function Header() {
    return (
       <header>
-         <div>
+         <Container>
             <div>
                <nav></nav>
                <button></button>
             </div>
-         </div>
+         </Container>
       </header>
    );
 }

@@ -1,6 +1,5 @@
 import Button from '@/components/form/button';
-import { Container } from '../componentsGlobal';
-import Nav from './nav';
+import { Container, Nav } from '../componentsGlobal';
 import Image from 'next/image';
 
 export default function Header() {
@@ -16,7 +15,7 @@ export default function Header() {
                />
             </div>
             <div className="flex gap-7 items-center">
-               <Nav />
+               <Nav links="header" />
                <Button>Login</Button>
             </div>
          </Container>

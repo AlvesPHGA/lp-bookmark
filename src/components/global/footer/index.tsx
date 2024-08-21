@@ -7,7 +7,7 @@ export function Footer() {
    return (
       <footer className="bg-blue-950 py-5">
          <Container>
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-14">
                <div className="h-7 w-40 relative">
                   <Image
                      src="./logo-bookmark-footer.svg"

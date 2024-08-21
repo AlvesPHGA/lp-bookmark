@@ -7,12 +7,14 @@ export default function Header() {
    return (
       <header className="py-5">
          <Container>
-            <Image
-               src="./logo-bookmark.svg"
-               alt="logo Bookmark"
-               width={230}
-               height={10}
-            />
+            <div className="h-7 w-40 relative">
+               <Image
+                  src="./logo-bookmark.svg"
+                  alt="logo Bookmark"
+                  fill
+                  className="object-fill"
+               />
+            </div>
             <div className="flex gap-7 items-center">
                <Nav />
                <Button>Login</Button>

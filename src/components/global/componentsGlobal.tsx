@@ -1,6 +1,7 @@
 import React from 'react';
-import { container } from './componentsGlobalStyle';
+import { container, link } from './componentsGlobalStyle';
 import Link from 'next/link';
+import { VariantProps } from 'tailwind-variants';
 
 interface ContainerProps extends React.ComponentProps<'div'> {}
 
@@ -8,25 +9,20 @@ export function Container({ children }: ContainerProps) {
    return <div className={container()}>{children}</div>;
 }
 
-export function Nav() {
+interface LinkProps
+   extends React.ComponentProps<'a'>,
+      VariantProps<typeof link> {}
+
+export function Nav({ links }: LinkProps) {
    return (
       <nav className="space-x-5">
-         <Link
-            className="text-xl uppercase text-blue-950 hover:text-red-500 transition"
-            href="#"
-         >
+         <Link className={link({ links })} href="#">
             Features
          </Link>
-         <Link
-            className="text-xl uppercase text-blue-950 hover:text-red-500 transition"
-            href="#"
-         >
+         <Link className={link({ links })} href="#">
             Pricing
          </Link>
-         <Link
-            className="text-xl uppercase text-blue-950 hover:text-red-500 transition"
-            href="#"
-         >
+         <Link className={link({ links })} href="#">
             Contact
          </Link>
       </nav>

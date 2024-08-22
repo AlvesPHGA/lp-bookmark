@@ -1,3 +1,9 @@
+import { IntroHome } from '../partials/home/intro';
+
 export function Home() {
-   return <main></main>;
+   return (
+      <main>
+         <IntroHome />
+      </main>
+   );
 }

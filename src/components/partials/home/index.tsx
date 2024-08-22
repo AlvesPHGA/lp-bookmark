@@ -1,11 +1,22 @@
 import { Container } from '@/components/global/componentsGlobal';
 import { ContentComponent } from './content';
+import Image from 'next/image';
+import { intro } from './homeStyles';
+
+const { base } = intro();
 
 export function IntroHome() {
    return (
-      <section className="py-28">
-         <Container>
+      <section className={base()}>
+         <Container items_position="center">
             <ContentComponent />
+            <Image
+               src="./illustration-hero.svg"
+               alt="a screen image"
+               width={700}
+               height={200}
+               className="absolute -right-28"
+            />
          </Container>
       </section>
    );

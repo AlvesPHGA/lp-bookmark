@@ -3,8 +3,8 @@ import { container, link } from './componentsGlobalStyle';
 import Link from 'next/link';
 import { ContainerProps, LinkProps } from './global-interfaces';
 
-export function Container({ children }: ContainerProps) {
-   return <div className={container()}>{children}</div>;
+export function Container({ items_position, children }: ContainerProps) {
+   return <div className={container({ items_position })}>{children}</div>;
 }
 
 export function Nav({ links }: LinkProps) {

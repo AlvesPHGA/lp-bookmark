@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { intro } from './homeStyles';
+import { intro } from '../homeStyles';
 
 const { title, text_box } = intro();
 

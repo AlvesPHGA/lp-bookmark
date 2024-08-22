@@ -1,7 +1,7 @@
 import { Container } from '@/components/global/componentsGlobal';
 import { ContentComponent } from './content';
 import Image from 'next/image';
-import { intro } from './homeStyles';
+import { intro } from '../homeStyles';
 
 const { base } = intro();
 

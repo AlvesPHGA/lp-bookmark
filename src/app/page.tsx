@@ -1,4 +1,4 @@
-import { IntroHome } from '@/components/partials/home';
+import { IntroHome } from '@/components/partials/home/intro';
 
 export default function Home() {
    return (

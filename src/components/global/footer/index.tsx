@@ -2,13 +2,17 @@ import Image from 'next/image';
 import { Container, Nav } from '../componentsGlobal';
 import { Facebook, Twitter } from 'lucide-react';
 import Link from 'next/link';
+import { footerStyle } from './footerStyle';
+
+const { footer, logo_nav_box, logo, social_media_box, social_media } =
+   footerStyle();
 
 export function Footer() {
    return (
-      <footer className="bg-blue-950 py-5">
+      <footer className={footer()}>
          <Container>
-            <div className="flex items-center gap-14">
-               <div className="h-7 w-40 relative">
+            <div className={logo_nav_box()}>
+               <div className={logo()}>
                   <Image
                      src="./logo-bookmark-footer.svg"
                      alt="logo Bookmark"
@@ -20,13 +24,13 @@ export function Footer() {
                <Nav links="footer" />
             </div>
 
-            <div className="flex gap-5 items-center">
+            <div className={social_media_box()}>
                <Link href="#">
-                  <Facebook className="size-11 text-white hover:text-red-500 transition" />
+                  <Facebook className={social_media()} />
                </Link>
 
                <Link href="#">
-                  <Twitter className="size-11 text-white hover:text-red-500 transition" />
+                  <Twitter className={social_media()} />
                </Link>
             </div>
          </Container>

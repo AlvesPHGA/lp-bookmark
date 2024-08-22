@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { intro } from '../homeStyles';
+import { intro, text } from '../homeStyles';
 
 const { title, text_box } = intro();
 
@@ -8,7 +8,7 @@ export function ContentComponent() {
       <div className="w-5/12">
          <h1 className={title()}>A Simple Bookmark Manager</h1>
          <div className={text_box()}>
-            <p className="text-slate-400">
+            <p className={text()}>
                A clean and simple interface to organize your favourite websites.
                Open a new browser tab and see your sites load instantly. Try it
                for free.

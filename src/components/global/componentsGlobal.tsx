@@ -1,17 +1,11 @@
 import React from 'react';
 import { container, link } from './componentsGlobalStyle';
 import Link from 'next/link';
-import { VariantProps } from 'tailwind-variants';
-
-interface ContainerProps extends React.ComponentProps<'div'> {}
+import { ContainerProps, LinkProps } from './global-interfaces';
 
 export function Container({ children }: ContainerProps) {
    return <div className={container()}>{children}</div>;
 }
-
-interface LinkProps
-   extends React.ComponentProps<'a'>,
-      VariantProps<typeof link> {}
 
 export function Nav({ links }: LinkProps) {
    return (

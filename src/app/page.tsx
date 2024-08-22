@@ -1,7 +1,4 @@
-import { Footer } from '@/components/global/footer';
-import Header from '@/components/global/header';
-import { IntroHome } from '@/components/partials/home/intro';
-import Image from 'next/image';
+import { IntroHome } from '@/components/partials/home';
 
 export default function Home() {
    return (

@@ -1,10 +1,18 @@
 import React from 'react';
-import { container, link } from './componentsGlobalStyle';
+import { blueBack, container, link } from './componentsGlobalStyle';
 import Link from 'next/link';
-import { ContainerProps, LinkProps } from './global-interfaces';
+import { BlueBackProps, ContainerProps, LinkProps } from './global-interfaces';
 
-export function Container({ items_position, children }: ContainerProps) {
-   return <div className={container({ items_position })}>{children}</div>;
+export function Container({
+   items_position,
+   flex_direction,
+   children,
+}: ContainerProps) {
+   return (
+      <div className={container({ items_position, flex_direction })}>
+         {children}
+      </div>
+   );
 }
 
 export function Nav({ links }: LinkProps) {
@@ -21,4 +29,8 @@ export function Nav({ links }: LinkProps) {
          </Link>
       </nav>
    );
+}
+
+export function BlueBack({ position }: BlueBackProps) {
+   return <div className={blueBack({ position })} />;
 }

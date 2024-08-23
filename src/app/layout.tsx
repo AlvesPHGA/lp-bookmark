@@ -16,7 +16,7 @@ export default function RootLayout({
    return (
       <html lang="pt-BR">
          <body>
-            <section className="min-h-[calc(100vh+10rem)] flex flex-col">
+            <section>
                <Header />
                {children}
                <Footer />

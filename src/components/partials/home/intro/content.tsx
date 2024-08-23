@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { intro, text } from '../homeStyles';
+import { cta } from '@/components/global/componentsGlobalStyle';
 
 const { title, text_box } = intro();
 
@@ -15,16 +16,10 @@ export function ContentComponent() {
             </p>
 
             <div className="flex gap-3">
-               <Link
-                  href="#"
-                  className="block w-fit px-5 py-2 bg-blue-600 font-medium rounded-md text-slate-300 text-base drop-shadow-lg border border-blue-600 hover:bg-transparent hover:text-blue-600 transition"
-               >
+               <Link href="#" className={cta({ type: 'blue' })}>
                   Get it on Chrome
                </Link>
-               <Link
-                  href="#"
-                  className="block w-fit px-5 py-2 font-medium rounded-md text-base bg-slate-200 text-slate-400 drop-shadow-lg border border-slate-200 hover:bg-transparent hover:border-slate-400 transition"
-               >
+               <Link href="#" className={cta({ type: 'gray' })}>
                   Get it on Firefox
                </Link>
             </div>

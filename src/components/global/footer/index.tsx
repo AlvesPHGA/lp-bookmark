@@ -10,7 +10,7 @@ const { footer, logo_nav_box, logo, social_media_box, social_media } =
 export function Footer() {
    return (
       <footer className={footer()}>
-         <Container>
+         <Container items_position="center">
             <div className={logo_nav_box()}>
                <div className={logo()}>
                   <Image

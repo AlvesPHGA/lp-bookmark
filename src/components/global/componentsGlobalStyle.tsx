@@ -36,7 +36,7 @@ export const blueBack = tv({
    variants: {
       position: {
          intro: 'right-0 rounded-bl-[10rem]',
-         features: 'left-0 rounded-br-[10rem]',
+         features: 'w-[46%] left-0 rounded-br-[10rem] bottom-20',
       },
    },
 });
@@ -48,7 +48,7 @@ export const cta = tv({
       type: {
          blue: 'text-slate-300 bg-blue-600 border-blue-600 hover:text-blue-600',
          gray: 'bg-slate-200 text-slate-400 border-slate-200 hover:border-slate-400',
-         small: 'text-slate-300 bg-blue-600 px-6 py-3 border-blue-600 hover:text-blue-600',
+         small: 'text-slate-300 bg-blue-600 px-6 py-3 border-blue-600 hover:text-blue-600 drop-shadow-none',
       },
    },
 });

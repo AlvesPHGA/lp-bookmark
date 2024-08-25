@@ -3,23 +3,15 @@ import { text, title } from '../homeStyles';
 import Image from 'next/image';
 import Link from 'next/link';
 import { container, cta } from '@/components/global/componentsGlobalStyle';
+import { Content } from './content';
 
 export function Download() {
    return (
       <section className="py-24">
          <Container flex_direction="column">
-            <div className="space-y-6 w-2/5 mx-auto text-center">
-               <h2 className={title({ size: 'subtitle' })}>
-                  Download the extension
-               </h2>
+            <Content />
 
-               <p className={text()}>
-                  We&apos;ve got more browser in the pipeline. Please do let us
-                  know if you&apos;d like us to prioritize.
-               </p>
-            </div>
-
-            <div className="w-full flex justify-center gap-10 mt-14 py-5   relative">
+            <div className="w-full flex justify-center gap-10 mt-14 py-5 relative">
                <div className="pt-10 rounded-lg shadow-lg w-fit relative bottom-5 ">
                   <div className="flex flex-col items-center pb-5">
                      <Image

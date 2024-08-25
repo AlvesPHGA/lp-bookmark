@@ -6,12 +6,19 @@ export const title = tv({
    variants: {
       size: {
          subtitle: 'text-3xl',
+         subtitle_two: 'text-xl mt-5 mb-1',
       },
    },
 });
 
 export const text = tv({
    base: 'text-slate-400',
+
+   variants: {
+      size: {
+         sm: 'text-sm',
+      },
+   },
 });
 
 export const intro = tv({
@@ -35,5 +42,15 @@ export const featuresTab = tv({
       tabs_box: 'flex mx-auto items-center w-fit border-b border-slate-300',
       tab: 'py-6 px-12 font-medium text-base text-slate-500 hover:text-red-500 transition',
       content_box: 'pr-20 flex flex-col justify-center gap-5',
+   },
+});
+
+export const download = tv({
+   slots: {
+      content_box: 'space-y-6 w-2/5 mx-auto text-center',
+
+      cards_box: 'w-full flex justify-center gap-10 mt-14 py-5 relative',
+      card: 'pt-10 rounded-lg shadow-lg w-fit relative first:bottom-5 last:top-5',
+      card_box_one: 'flex flex-col items-center',
    },
 });

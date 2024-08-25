@@ -1,8 +1,10 @@
-import { text, title } from '../homeStyles';
+import { text, title, download } from '../homeStyles';
+
+const { content_box } = download();
 
 export function Content() {
    return (
-      <div className="space-y-6 w-2/5 mx-auto text-center">
+      <div className={content_box()}>
          <h2 className={title({ size: 'subtitle' })}>Download the extension</h2>
 
          <p className={text()}>

@@ -1,59 +1,56 @@
 import { cta } from '@/components/global/componentsGlobalStyle';
 import Image from 'next/image';
 import Link from 'next/link';
+import { download, text, title } from '../homeStyles';
+
+const { cards_box, card, card_box_one } = download();
+
+const infoCard = [
+   {
+      browser: 'chrome',
+      legend: 'Chrome',
+      version: '62',
+   },
+   {
+      browser: 'firefox',
+      legend: 'Firefox',
+      version: '55',
+   },
+   {
+      browser: 'opera',
+      legend: 'Opera',
+      version: '62',
+   },
+];
 
 export function Cards() {
    return (
-      <div className="w-full flex justify-center gap-10 mt-14 py-5 relative">
-         <div className="pt-10 rounded-lg shadow-lg w-fit relative bottom-5 ">
-            <div className="flex flex-col items-center pb-5">
-               <Image src="./logo-chrome.svg" alt="" width={100} height={100} />
-               <h3 className="text-xl text-blue-950 mt-5 mb-1 font-medium">
-                  Add to Chrome
-               </h3>
-               <p className="text-sm text-slate-400">Minimum version 62</p>
-            </div>
-            <div className="p-6">
-               <Link href="#" className={cta({ type: 'blue' })}>
-                  Add & Install Extension
-               </Link>
-            </div>
-         </div>
-
-         <div className="pt-10 rounded-lg shadow-lg w-fit relative">
-            <div className="flex flex-col items-center">
-               <Image
-                  src="./logo-firefox.svg"
-                  alt=""
-                  width={100}
-                  height={100}
-               />
-               <h3 className="text-xl text-blue-950 mt-5 mb-1 font-medium">
-                  Add to Firefox
-               </h3>
-               <p className="text-sm text-slate-400">Minimum version 55</p>
-            </div>
-            <div className="p-6">
-               <Link href="#" className={cta({ type: 'blue' })}>
-                  Add & Install Extension
-               </Link>
-            </div>
-         </div>
-
-         <div className="pt-10 rounded-lg shadow-lg w-fit relative  top-5">
-            <div className="flex flex-col items-center">
-               <Image src="./logo-opera.svg" alt="" width={100} height={100} />
-               <h3 className="text-xl text-blue-950 mt-5 mb-1 font-medium">
-                  Add to Opera
-               </h3>
-               <p className="text-sm text-slate-400">Minimum version 62</p>
-            </div>
-            <div className="p-6">
-               <Link href="#" className={cta({ type: 'blue' })}>
-                  Add & Install Extension
-               </Link>
-            </div>
-         </div>
+      <div className={cards_box()}>
+         {infoCard.map((data) => {
+            return (
+               <div key={data.browser} className={card()}>
+                  <div className={card_box_one()}>
+                     <Image
+                        src={`./logo-${data.browser}.svg`}
+                        alt=""
+                        width={100}
+                        height={100}
+                     />
+                     <h3 className={title({ size: 'subtitle_two' })}>
+                        Add to {data.legend}
+                     </h3>
+                     <p className={text({ size: 'sm' })}>
+                        Minimum version {data.version}
+                     </p>
+                  </div>
+                  <div className="p-6">
+                     <Link href="#" className={cta({ type: 'blue' })}>
+                        Add & Install Extension
+                     </Link>
+                  </div>
+               </div>
+            );
+         })}
       </div>
    );
 }

@@ -32,7 +32,11 @@ export function FAQContent() {
                      {data.question}
                      <ChevronDown className="text-blue-600 size-10" />
                   </dt>
-                  <dd></dd>
+                  <dd className="mt-5 text-slate-400">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Reiciendis in commodi placeat culpa quibusdam sapiente ea
+                     modi consequuntur a totam
+                  </dd>
                </div>
             );
          })}

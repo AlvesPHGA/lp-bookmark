@@ -1,4 +1,7 @@
 import { ChevronDown } from 'lucide-react';
+import { faq } from '../homeStyles';
+
+const { faq_field, question } = faq();
 
 const contentfaq = [
    {
@@ -24,11 +27,8 @@ export function FAQContent() {
       <dl className="w-full">
          {contentfaq.map((data) => {
             return (
-               <div
-                  key={data.id}
-                  className="py-5 border-t border-slate-400 last:border-b"
-               >
-                  <dt className="text-blue-950 font-medium flex items-center justify-between pr-5 cursor-pointer hover:text-red-500 transition">
+               <div key={data.id} className={faq_field()}>
+                  <dt className={question()}>
                      {data.question}
                      <ChevronDown className="text-blue-600 size-10" />
                   </dt>

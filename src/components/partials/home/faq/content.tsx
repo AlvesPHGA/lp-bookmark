@@ -1,8 +1,10 @@
-import { text, title } from '../homeStyles';
+import { faq, text, title } from '../homeStyles';
+
+const { content_box } = faq();
 
 export function Content() {
    return (
-      <div className="space-y-6 w-5/12 mx-auto text-center">
+      <div className={content_box()}>
          <h2 className={title({ size: 'subtitle' })}>
             Frequently Asked Questions
          </h2>

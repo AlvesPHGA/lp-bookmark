@@ -1,7 +1,6 @@
-import { cta } from '@/components/global/componentsGlobalStyle';
 import Image from 'next/image';
-import Link from 'next/link';
 import { download, text, title } from '../homeStyles';
+import { CTA } from '@/components/global/componentsGlobal';
 
 const { cards_box, card, card_box_one } = download();
 
@@ -44,9 +43,7 @@ export function Cards() {
                      </p>
                   </div>
                   <div className="p-6">
-                     <Link href="#" className={cta({ type: 'blue' })}>
-                        Add & Install Extension
-                     </Link>
+                     <CTA type="blue">Add & Install Extension</CTA>
                   </div>
                </div>
             );

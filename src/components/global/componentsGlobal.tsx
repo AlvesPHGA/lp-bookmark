@@ -1,7 +1,12 @@
 import React from 'react';
-import { blueBack, container, link } from './componentsGlobalStyle';
+import { blueBack, container, cta, link } from './componentsGlobalStyle';
 import Link from 'next/link';
-import { BlueBackProps, ContainerProps, LinkProps } from './global-interfaces';
+import {
+   BlueBackProps,
+   ContainerProps,
+   CTAProps,
+   LinkProps,
+} from './global-interfaces';
 
 export function Container({
    items_position,
@@ -33,4 +38,12 @@ export function Nav({ links }: LinkProps) {
 
 export function BlueBack({ position }: BlueBackProps) {
    return <div className={blueBack({ position })} />;
+}
+
+export function CTA({ type, children }: CTAProps) {
+   return (
+      <Link href="#" className={cta({ type })}>
+         {children}
+      </Link>
+   );
 }

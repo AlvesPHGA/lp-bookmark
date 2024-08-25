@@ -1,6 +1,5 @@
-import { cta } from '@/components/global/componentsGlobalStyle';
 import { featuresTab, text, title } from '../../homeStyles';
-import Link from 'next/link';
+import { CTA } from '@/components/global/componentsGlobal';
 
 const { content_box } = featuresTab();
 
@@ -13,9 +12,7 @@ export function Content() {
             interface gives you complete control over how you manage your
             favourite sites.
          </p>
-         <Link href="#" className={cta({ type: 'small' })}>
-            More Info
-         </Link>
+         <CTA type="small">More Info</CTA>
       </div>
    );
 }

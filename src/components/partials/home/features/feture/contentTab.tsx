@@ -1,7 +1,4 @@
 import Image from 'next/image';
-import { text, title } from '../../homeStyles';
-import Link from 'next/link';
-import { cta } from '@/components/global/componentsGlobalStyle';
 import { Content } from './content';
 
 export function ContentTab() {

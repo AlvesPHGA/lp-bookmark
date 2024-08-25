@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import { intro, text } from '../homeStyles';
-import { cta } from '@/components/global/componentsGlobalStyle';
+import { CTA } from '@/components/global/componentsGlobal';
 
 const { title, text_box } = intro();
 
@@ -16,12 +15,8 @@ export function ContentComponent() {
             </p>
 
             <div className="flex gap-3">
-               <Link href="#" className={cta({ type: 'blue' })}>
-                  Get it on Chrome
-               </Link>
-               <Link href="#" className={cta({ type: 'gray' })}>
-                  Get it on Firefox
-               </Link>
+               <CTA type="blue">Get it on Chrome</CTA>
+               <CTA type="gray">Get it on Firefox</CTA>
             </div>
          </div>
       </div>

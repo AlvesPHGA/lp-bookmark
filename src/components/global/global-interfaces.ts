@@ -13,3 +13,7 @@ export interface LinkProps
 export interface BlueBackProps
    extends React.ComponentProps<'div'>,
       VariantProps<typeof blueBack> {}
+
+export interface CTAProps
+   extends React.HtmlHTMLAttributes<'a'>,
+      VariantProps<typeof cta> {}

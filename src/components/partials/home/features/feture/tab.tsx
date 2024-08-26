@@ -1,10 +1,15 @@
-import React from 'react';
-import { featuresTab } from '../style';
+import React, { ReactNode } from 'react';
+import { featuresTab, tab } from '../style';
 
-interface TabProps extends React.ComponentProps<'button'> {}
+interface TabProps extends React.ComponentProps<'button'> {
+   children: ReactNode;
+   isActive: boolean;
+}
 
-const { tab } = featuresTab();
-
-export function Tab({ children }: TabProps) {
-   return <button className={tab()}>{children}</button>;
+export function Tab({ children, isActive, ...rest }: TabProps) {
+   return (
+      <button {...rest} className={tab({ isActive })}>
+         {children}
+      </button>
+   );
 }

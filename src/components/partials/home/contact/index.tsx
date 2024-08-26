@@ -1,12 +1,18 @@
 import { Container } from '@/components/global/componentsGlobal';
 import { title } from '../homeStyles';
-import { AlertCircle, X } from 'lucide-react';
 import Button from '@/components/form/button';
-import { buttonStyle } from '@/components/form/formStyles';
 import { contact } from './style';
 
-const { section, texts_box, legend, form, input_box, input_field, alert } =
-   contact();
+const {
+   section,
+   texts_box,
+   legend,
+   form,
+   input_box,
+   input_field,
+   input,
+   alert,
+} = contact();
 
 export function Contact() {
    return (
@@ -26,7 +32,7 @@ export function Contact() {
                         name="email"
                         id="email"
                         placeholder="Enter your email address"
-                        className="py-2 pl-2 w-64 border-none outline-none rounded-l-md"
+                        className={input()}
                      />
 
                      <span className={alert()}>!</span>

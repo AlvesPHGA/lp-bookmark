@@ -1,4 +1,5 @@
-import { features, text, title } from '../homeStyles';
+import { text, title } from '../homeStyles';
+import { features } from './style';
 
 const { content, text_box } = features();
 

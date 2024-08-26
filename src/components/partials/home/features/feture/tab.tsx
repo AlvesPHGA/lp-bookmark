@@ -1,5 +1,5 @@
 import React from 'react';
-import { featuresTab } from '../../homeStyles';
+import { featuresTab } from '../style';
 
 interface TabProps extends React.ComponentProps<'button'> {}
 

@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import { download, text, title } from '../homeStyles';
+import { text, title } from '../homeStyles';
 import { CTA } from '@/components/global/componentsGlobal';
+import { download } from './style';
 
 const { cards_box, card, card_box_one } = download();
 

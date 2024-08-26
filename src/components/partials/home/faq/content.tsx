@@ -1,4 +1,5 @@
-import { faq, text, title } from '../homeStyles';
+import { text, title } from '../homeStyles';
+import { faq } from './style';
 
 const { content_box } = faq();
 

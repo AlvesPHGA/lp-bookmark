@@ -1,8 +1,7 @@
 import { Container, CTA } from '@/components/global/componentsGlobal';
-import { faq, text, title } from '../homeStyles';
-import { ChevronDown } from 'lucide-react';
 import { Content } from './content';
 import { FAQContent } from './faq-content';
+import { faq } from './style';
 
 const { faq_box } = faq();
 

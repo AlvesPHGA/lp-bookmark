@@ -1,5 +1,6 @@
-import { intro, text } from '../homeStyles';
+import { text } from '../homeStyles';
 import { CTA } from '@/components/global/componentsGlobal';
+import { intro } from './style';
 
 const { title, text_box } = intro();
 

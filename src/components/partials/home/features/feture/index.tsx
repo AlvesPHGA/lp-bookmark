@@ -1,6 +1,6 @@
 import { Tab } from './tab';
 import { ContentTab } from './contentTab';
-import { featuresTab } from '../../homeStyles';
+import { featuresTab } from '../style';
 
 const { base, tabs_box } = featuresTab();
 

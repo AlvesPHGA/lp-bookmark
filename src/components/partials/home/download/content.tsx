@@ -1,4 +1,5 @@
-import { text, title, download } from '../homeStyles';
+import { text, title } from '../homeStyles';
+import { download } from './style';
 
 const { content_box } = download();
 

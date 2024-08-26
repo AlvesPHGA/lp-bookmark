@@ -1,5 +1,5 @@
 import { ChevronDown } from 'lucide-react';
-import { faq } from '../homeStyles';
+import { faq } from './style';
 
 const { faq_field, question } = faq();
 

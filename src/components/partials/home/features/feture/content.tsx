@@ -1,5 +1,6 @@
-import { featuresTab, text, title } from '../../homeStyles';
+import { text, title } from '../../homeStyles';
 import { CTA } from '@/components/global/componentsGlobal';
+import { featuresTab } from '../style';
 
 const { content_box } = featuresTab();
 

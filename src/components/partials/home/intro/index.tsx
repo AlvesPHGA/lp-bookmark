@@ -1,7 +1,7 @@
 import { BlueBack, Container } from '@/components/global/componentsGlobal';
 import { ContentComponent } from './content';
 import Image from 'next/image';
-import { intro } from '../homeStyles';
+import { intro } from './style';
 
 const { base } = intro();
 

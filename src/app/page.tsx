@@ -1,3 +1,4 @@
+import { Contact } from '@/components/partials/home/contact';
 import { Download } from '@/components/partials/home/download';
 import { FAQ } from '@/components/partials/home/faq';
 import { Features } from '@/components/partials/home/features';
@@ -10,6 +11,7 @@ export default function Home() {
          <Features />
          <Download />
          <FAQ />
+         <Contact />
       </main>
    );
 }

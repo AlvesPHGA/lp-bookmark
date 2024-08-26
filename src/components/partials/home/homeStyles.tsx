@@ -8,6 +8,10 @@ export const title = tv({
          subtitle: 'text-3xl',
          subtitle_two: 'text-xl mt-5 mb-1',
       },
+
+      color: {
+         white: 'text-white',
+      },
    },
 });
 

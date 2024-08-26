@@ -16,7 +16,7 @@ export default function Header() {
             </div>
             <div className="flex gap-7 items-center">
                <Nav links="header" />
-               <Button>Login</Button>
+               <Button place="header">Login</Button>
             </div>
          </Container>
       </header>

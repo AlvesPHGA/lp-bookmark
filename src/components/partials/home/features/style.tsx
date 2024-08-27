@@ -16,11 +16,11 @@ export const featuresTab = tv({
 });
 
 export const tab = tv({
-   base: 'py-6 px-12 font-medium text-base text-slate-500 hover:text-red-500 transition',
+   base: 'py-6 px-12 font-medium text-base text-slate-500 hover:text-red-500 transition relative',
 
    variants: {
       isActive: {
-         true: 'text-blue-950',
+         true: 'text-blue-950 after:absolute after:w-full after:h-1 after:bottom-0 after:left-0 after:bg-red-500 after:content-[" "]',
       },
    },
 

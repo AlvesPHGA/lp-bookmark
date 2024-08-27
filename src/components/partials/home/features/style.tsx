@@ -28,3 +28,25 @@ export const tab = tv({
       isActive: false,
    },
 });
+
+export const contentTab = tv({
+   base: 'hidden',
+
+   variants: {
+      tab: {
+         content: 'justify-center gap-20 grid-cols-[600px_500px]',
+      },
+
+      isActiveTab: {
+         true: 'grid',
+      },
+   },
+
+   defaultVariants: {
+      isActiveTab: false,
+   },
+});
+
+export const imageTab = tv({
+   base: 'w-[600px] h-[500px] first:h-[400px]',
+});

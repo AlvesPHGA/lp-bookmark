@@ -11,9 +11,11 @@ const tabs = ['Simple Bookmarking', 'Speedy Searching', 'Easy Sharing'];
 
 export function Feature() {
    const [active, setActive] = React.useState(0);
+   const [showContent, setShowContent] = React.useState(0);
 
    function handleTab(i: number) {
       setActive(i);
+      setShowContent(i);
    }
 
    return (
@@ -29,7 +31,8 @@ export function Feature() {
                </Tab>
             ))}
          </div>
-         <ContentTab />
+
+         <ContentTab value={showContent} />
       </div>
    );
 }

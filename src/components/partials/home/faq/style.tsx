@@ -21,7 +21,7 @@ export const faq = tv({
       active: {
          true: {
             arrow: 'text-red-500 rotate-180',
-            answer_faq: 'static opacity-100 h-28 transition-all',
+            answer_faq: 'opacity-100 h-28',
          },
       },
    },

@@ -22,7 +22,7 @@ export function Container({
 
 export function Nav({ links }: LinkProps) {
    return (
-      <nav className="space-x-5">
+      <nav role="navigation" aria-label="menu principal" className="space-x-5">
          <Link className={link({ links })} href="#">
             Features
          </Link>

@@ -8,5 +8,9 @@ export const buttonStyle = tv({
          header: 'uppercase px-6 py-1',
          contact: 'h-[45px] px-7 hover:bg-white',
       },
+
+      status: {
+         block: 'pointer-events-none cursor-wait opacity-70',
+      },
    },
 });

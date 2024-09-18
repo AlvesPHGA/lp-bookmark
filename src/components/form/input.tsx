@@ -1,11 +1,13 @@
+import ErrorAlert from '@/helper/error-alert';
 import React from 'react';
 
 interface FieldInputProps extends React.ComponentProps<'input'> {
    name: string;
    aria: string;
+   alert: boolean;
 }
 
-export function FieldInput({ name, aria, ...props }: FieldInputProps) {
+export function FieldInput({ name, aria, alert, ...props }: FieldInputProps) {
    return (
       <div className="flex gap-2 items-center">
          <label htmlFor={name} className="hidden">
@@ -17,12 +19,10 @@ export function FieldInput({ name, aria, ...props }: FieldInputProps) {
             name={name}
             id={name}
             placeholder={props.placeholder}
-            className="py-2 pl-2 w-64 border-none outline-none rounded-l-md"
+            className="py-2 pl-2 w-64 outline-none rounded-l-md border border-zinc-700"
          />
 
-         <span className="py-0.5 px-3 text-base text-white font-medium rounded-[50%] text-wrap bg-red-500 mr-1">
-            !
-         </span>
+         <ErrorAlert alert={alert} />
       </div>
    );
 }

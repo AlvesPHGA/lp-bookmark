@@ -1,18 +1,26 @@
 'use server';
 
-export default async function contactInput(form: FormData) {
+import errorAlert from './error';
+
+export default async function contactInput(state: {}, form: FormData) {
    const useremail = form.get('email') as string | null;
 
    try {
-      if (!useremail) throw new Error('preencher campo email corretamente');
+      if (!useremail) throw new Error("whoops, make sure it's an email.");
 
       await new Promise((resolve) => setTimeout(resolve, 3000));
 
-      await fetch('http://localhost:3333/email', {
+      const res = await fetch('http://localhost:3333/email', {
          method: 'POST',
          body: JSON.stringify({ useremail }),
       });
+
+      if (!res.ok) throw new Error('Please, try latter.');
+
+      const data = await res.json();
+
+      return { data: null, ok: false, error: '' };
    } catch (error) {
-      console.log(error);
+      return errorAlert(error);
    }
 }

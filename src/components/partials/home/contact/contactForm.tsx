@@ -12,14 +12,13 @@ const { form, input_box } = contact();
 
 export function ContactForm() {
    const [state, action] = useFormState(contactInput, {
-      ok: false,
-      error: '',
-      data: null,
+      success: true,
+      message: '',
    });
 
    useEffect(() => {
-      if (state.ok) document.querySelector('form')?.reset();
-   }, [state.ok]);
+      if (state) console.log(state);
+   }, [state]);
 
    return (
       <form action={action} method="post" className={form()}>
@@ -28,9 +27,9 @@ export function ContactForm() {
                name="email"
                aria="Digite o seu endereço de email"
                placeholder="Enter your email address"
-               alert={state.ok}
+               alert={state.success}
             />
-            <ErrorMessage error={state.error} />
+            <ErrorMessage error={state.message} />
          </div>
          <ContactButton
             place="contact"

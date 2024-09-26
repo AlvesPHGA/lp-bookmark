@@ -1,10 +1,6 @@
-import React, { ReactNode } from 'react';
-import { featuresTab, tab } from '../style';
-
-interface TabProps extends React.ComponentProps<'button'> {
-   children: ReactNode;
-   isActive: boolean;
-}
+import React from 'react';
+import { tab } from '../style';
+import { TabProps } from '../interface';
 
 export function Tab({ children, isActive, ...rest }: TabProps) {
    return (

@@ -1,11 +1,6 @@
 import ErrorAlert from '@/helper/error-alert';
 import React from 'react';
-
-interface FieldInputProps extends React.ComponentProps<'input'> {
-   name: string;
-   aria: string;
-   alert: boolean;
-}
+import { FieldInputProps } from './interfaces';
 
 export function FieldInput({ name, aria, alert, ...props }: FieldInputProps) {
    return (

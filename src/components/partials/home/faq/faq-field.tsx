@@ -3,15 +3,11 @@
 import { ChevronDown } from 'lucide-react';
 import { faq } from './style';
 import React from 'react';
+import { FAQFieldProps } from './interface';
 
 const { faq_field, question_faq, answer_faq, arrow } = faq({
    answer: 'hidden',
 });
-
-interface FAQFieldProps {
-   question: string;
-   answer: string;
-}
 
 export function FAQField({ question, answer }: FAQFieldProps) {
    const [active, setActive] = React.useState(false);

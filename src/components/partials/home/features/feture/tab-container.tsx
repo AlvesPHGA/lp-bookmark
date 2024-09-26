@@ -1,13 +1,6 @@
 import React from 'react';
 import { contentTab } from '../style';
-import { VariantProps } from 'tailwind-variants';
-
-interface TabContainerProps
-   extends React.ComponentProps<'div'>,
-      VariantProps<typeof contentTab> {
-   children: React.ReactNode;
-   isActiveTab: boolean;
-}
+import { TabContainerProps } from '../interface';
 
 export function TabContainer({
    tab,

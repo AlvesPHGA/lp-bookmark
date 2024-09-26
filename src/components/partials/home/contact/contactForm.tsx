@@ -8,7 +8,7 @@ import { ContactButton } from './peding-button';
 import { ErrorMessage } from '@/helper/error-message';
 import { useFormState } from 'react-dom';
 
-const { form, input_box } = contact();
+const { form } = contact();
 
 export function ContactForm() {
    const [state, action] = useFormState(contactInput, {

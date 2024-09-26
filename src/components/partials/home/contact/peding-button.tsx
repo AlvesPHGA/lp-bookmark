@@ -3,12 +3,7 @@
 import Button from '@/components/form/button';
 import React from 'react';
 import { useFormStatus } from 'react-dom';
-
-interface ContactButtonProps extends React.ComponentProps<'button'> {
-   place: 'header' | 'contact';
-   send: string;
-   sending: string;
-}
+import { ContactButtonProps } from './interfaces';
 
 export function ContactButton({ place, send, sending }: ContactButtonProps) {
    const { pending } = useFormStatus();

@@ -17,12 +17,16 @@ export function ContactForm() {
    });
 
    useEffect(() => {
-      if (state) console.log(state);
+      if (state) document.querySelector('form')?.reset();
    }, [state]);
 
    return (
       <form action={action} method="post" className={form()}>
-         <div className={input_box()}>
+         <div
+            className={`space-y-0.5 bg-white rounded-md border w-80 ${
+               state.success ? '' : 'bg-red-500 border-red-500'
+            }`}
+         >
             <FieldInput
                name="email"
                aria="Digite o seu endereço de email"

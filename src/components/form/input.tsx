@@ -19,7 +19,7 @@ export function FieldInput({ name, aria, alert, ...props }: FieldInputProps) {
             name={name}
             id={name}
             placeholder={props.placeholder}
-            className="py-2 pl-2 w-64 outline-none rounded-l-md border border-zinc-700"
+            className="py-2 pl-2 w-72 outline-none rounded-l-md bg-transparent"
          />
 
          <ErrorAlert alert={alert} />

@@ -9,15 +9,21 @@ const { faq_field, question_faq, answer_faq, arrow } = faq({
    answer: 'hidden',
 });
 
-export function FAQField({ question, answer }: FAQFieldProps) {
+export function FAQField({ key, question, answer }: FAQFieldProps) {
    const [active, setActive] = React.useState(false);
 
    function handleClick() {
       setActive(!active);
    }
    return (
-      <div className={faq_field()}>
-         <dt className={question_faq()} onClick={handleClick}>
+      <div role="dialog" aria-labelledby={question} className={faq_field()}>
+         <dt
+            id={question}
+            role="button"
+            tabIndex={key}
+            className={question_faq()}
+            onClick={handleClick}
+         >
             {question}
             <ChevronDown className={arrow({ active })} />
          </dt>

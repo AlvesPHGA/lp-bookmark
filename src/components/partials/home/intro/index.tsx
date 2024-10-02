@@ -3,20 +3,21 @@ import { ContentComponent } from './content';
 import Image from 'next/image';
 import { intro } from './style';
 
-const { base } = intro();
+const { base, img_box } = intro();
 
 export function IntroHome() {
    return (
       <section className={base()}>
          <Container items_position="center">
             <ContentComponent />
-            <Image
-               src="./illustration-hero.svg"
-               alt="a screen image"
-               width={700}
-               height={200}
-               className="absolute -right-28 z-10"
-            />
+            <div className={img_box()}>
+               <Image
+                  src="./illustration-hero.svg"
+                  alt="a screen image"
+                  fill
+                  className="object-fill"
+               />
+            </div>
          </Container>
          <BlueBack position="intro" />
       </section>

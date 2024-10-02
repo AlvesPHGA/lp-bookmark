@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const container = tv({
-   base: 'max-w-7xl flex justify-between mx-auto relative z-10',
+   base: 'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl',
 
    variants: {
       items_position: {
@@ -31,7 +31,7 @@ export const link = tv({
 });
 
 export const blueBack = tv({
-   base: 'absolute w-[37%] h-96 bg-blue-600 bottom-0  z-0',
+   base: 'absolute w-[37%] h-96 bg-blue-600 bottom-0 z-0 lg:[40%] lg:h-80',
 
    variants: {
       position: {

@@ -9,9 +9,9 @@ export const features = tv({
 
 export const featuresTab = tv({
    slots: {
-      base: 'w-full mx-auto space-y-16 mt-16',
+      base: 'w-full mx-auto space-y-16 mt-16 lg:mt-14',
       tabs_box: 'flex mx-auto items-center w-fit border-b border-slate-300',
-      content_box: 'pr-20 flex flex-col justify-center gap-5',
+      content_box: 'pr-20 flex flex-col justify-center gap-5 lg:pr-16',
    },
 });
 
@@ -34,7 +34,8 @@ export const contentTab = tv({
 
    variants: {
       tab: {
-         content: 'justify-center gap-20 grid-cols-[600px_500px]',
+         content:
+            'justify-center gap-20 grid-cols-[600px_500px] lg:grid-cols-[500px_400px] lg:gap-16',
       },
 
       isActiveTab: {
@@ -48,5 +49,5 @@ export const contentTab = tv({
 });
 
 export const imageTab = tv({
-   base: 'w-[600px] h-[500px] first:h-[400px]',
+   base: 'w-[50rem] h-[37.5rem] first:h-[25rem] lg:w-[500px] lg:first:h-[350px] lg:h-[380px]',
 });

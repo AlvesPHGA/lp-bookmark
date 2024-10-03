@@ -7,7 +7,7 @@ const { faq_box } = faq();
 
 export function FAQ() {
    return (
-      <section className="py-24">
+      <section className="py-24 lg:py-20">
          <Container flex_direction="column">
             <Content />
 

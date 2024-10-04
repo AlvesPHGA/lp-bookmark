@@ -31,7 +31,7 @@ export const link = tv({
 });
 
 export const blueBack = tv({
-   base: 'absolute w-[37%] h-96 bg-blue-600 bottom-0 z-0 lg:w-[40%] lg:h-80',
+   base: 'absolute w-[37%] h-96 bg-blue-600 bottom-0 z-0 lg:w-[30%] lg:h-80',
 
    variants: {
       position: {

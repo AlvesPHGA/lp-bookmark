@@ -2,8 +2,9 @@ import { tv } from 'tailwind-variants';
 
 export const contact = tv({
    slots: {
-      section: 'bg-blue-600 py-24',
-      texts_box: 'text-white font-medium w-4/12 text-center space-y-5 mx-auto',
+      section: 'bg-blue-600 py-24 lg:py-16',
+      texts_box:
+         'text-white font-medium w-4/12 text-center space-y-5 mx-auto lg:space-y-3',
       legend: 'uppercase text-base',
       form: 'flex items-start gap-3 mx-auto mt-10',
       input_box: 'space-y-0.5 bg-white rounded-md border w-80',

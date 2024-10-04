@@ -10,7 +10,7 @@ export const features = tv({
 export const featuresTab = tv({
    slots: {
       base: 'w-full mx-auto space-y-16 mt-16 lg:mt-14',
-      tabs_box: 'flex mx-auto items-center w-fit border-b border-slate-300',
+      tabs_box: 'flex mx-auto items-center w-fit',
       content_box: 'pr-20 flex flex-col justify-center gap-5 lg:pr-16',
    },
 });
@@ -35,7 +35,7 @@ export const contentTab = tv({
    variants: {
       tab: {
          content:
-            'justify-center gap-20 grid-cols-[600px_500px] lg:grid-cols-[500px_400px] lg:gap-16',
+            'justify-center gap-20 grid-cols-[600px_500px] lg:grid-cols-[400px_400px] lg:justify-between',
       },
 
       isActiveTab: {
@@ -49,5 +49,5 @@ export const contentTab = tv({
 });
 
 export const imageTab = tv({
-   base: 'w-[50rem] h-[37.5rem] first:h-[25rem] lg:w-[500px] lg:first:h-[350px] lg:h-[380px]',
+   base: 'w-[50rem] h-[37.5rem] first:h-[25rem] lg:w-[440px] lg:first:h-[320px] lg:h-[380px]',
 });

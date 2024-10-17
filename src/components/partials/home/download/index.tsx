@@ -4,7 +4,7 @@ import { Cards } from './cards';
 
 export function Download() {
    return (
-      <section className="py-24 lg:py-20">
+      <section className="py-24 lg:py-20 md:py-12">
          <Container flex_direction="column">
             <Content />
             <Cards />

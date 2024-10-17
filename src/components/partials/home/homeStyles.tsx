@@ -5,8 +5,8 @@ export const title = tv({
 
    variants: {
       size: {
-         subtitle: 'text-3xl',
-         subtitle_two: 'text-xl mt-5 mb-1',
+         subtitle: 'text-3xl md:text-2xl',
+         subtitle_two: 'text-xl mt-5 mb-1 ',
       },
 
       color: {
@@ -16,7 +16,7 @@ export const title = tv({
 });
 
 export const text = tv({
-   base: 'text-slate-400',
+   base: 'text-slate-400 md:text-base',
 
    variants: {
       size: {

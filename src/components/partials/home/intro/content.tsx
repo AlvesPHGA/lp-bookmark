@@ -6,7 +6,7 @@ const { title, text_box } = intro();
 
 export function ContentComponent() {
    return (
-      <div className="w-5/12">
+      <div className="w-5/12 md:w-[50%]">
          <h1 className={title()}>A Simple Bookmark Manager</h1>
          <div className={text_box()}>
             <p className={text()}>

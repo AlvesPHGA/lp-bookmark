@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const container = tv({
-   base: 'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl',
+   base: 'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6',
 
    variants: {
       items_position: {
@@ -20,7 +20,7 @@ export const container = tv({
 });
 
 export const link = tv({
-   base: 'text-xl uppercase hover:text-red-500 transition',
+   base: 'text-xl uppercase hover:text-red-500 transition md:text-lg',
 
    variants: {
       links: {
@@ -31,7 +31,7 @@ export const link = tv({
 });
 
 export const blueBack = tv({
-   base: 'absolute w-[37%] h-96 bg-blue-600 bottom-0 z-0 lg:w-[30%] lg:h-80',
+   base: 'absolute w-[37%] h-96 bg-blue-600 bottom-0 z-0 lg:w-[30%] lg:h-80 md:h-64',
 
    variants: {
       position: {
@@ -42,7 +42,7 @@ export const blueBack = tv({
 });
 
 export const cta = tv({
-   base: 'block w-fit px-5 py-2  font-medium rounded-md  text-base drop-shadow-lg border  hover:bg-transparent  transition',
+   base: 'block w-fit px-5 py-2  font-medium rounded-md  text-base drop-shadow-lg border  hover:bg-transparent  transition md:px-2 md:py-2',
 
    variants: {
       type: {

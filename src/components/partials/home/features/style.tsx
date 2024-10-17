@@ -2,16 +2,16 @@ import { tv } from 'tailwind-variants';
 
 export const features = tv({
    slots: {
-      content: 'text-center space-y-5',
-      text_box: 'w-5/12 text-center mx-auto',
+      content: 'text-center space-y-5 md:space-y-3',
+      text_box: 'w-5/12 text-center mx-auto md:w-4/6',
    },
 });
 
 export const featuresTab = tv({
    slots: {
-      base: 'w-full mx-auto space-y-16 mt-16 lg:mt-14',
+      base: 'w-full mx-auto space-y-16 mt-16 lg:mt-14 md:space-y-12 md:mt-10',
       tabs_box: 'flex mx-auto items-center w-fit',
-      content_box: 'pr-20 flex flex-col justify-center gap-5 lg:pr-16',
+      content_box: 'pr-20 flex flex-col justify-center gap-5 lg:pr-16 md:pr-0',
    },
 });
 
@@ -35,7 +35,7 @@ export const contentTab = tv({
    variants: {
       tab: {
          content:
-            'justify-center gap-20 grid-cols-[600px_500px] lg:grid-cols-[400px_400px] lg:justify-between',
+            'justify-center gap-20 grid-cols-[600px_500px] lg:grid-cols-[400px_400px] lg:justify-between md:grid-cols-[320px_320px]',
       },
 
       isActiveTab: {
@@ -49,5 +49,5 @@ export const contentTab = tv({
 });
 
 export const imageTab = tv({
-   base: 'w-[50rem] h-[37.5rem] first:h-[25rem] lg:w-[440px] lg:first:h-[320px] lg:h-[380px]',
+   base: 'w-[50rem] h-[37.5rem] first:h-[25rem] lg:w-[440px] lg:first:h-[320px] lg:h-[380px] md:w-80 md:first:h-60 md:h-52',
 });

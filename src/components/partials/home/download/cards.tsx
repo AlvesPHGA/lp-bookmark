@@ -43,7 +43,7 @@ export function Cards() {
                         Minimum version {data.version}
                      </p>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 md:px-3">
                      <CTA type="blue">Add & Install Extension</CTA>
                   </div>
                </div>

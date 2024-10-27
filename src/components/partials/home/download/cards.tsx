@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { text, title } from '../homeStyles';
 import { CTA } from '@/components/global/componentsGlobal';
-import { download } from './style';
+import { downloadStyle } from './style';
 
-const { cards_box, card, card_box_one } = download();
+const { cards_box, card, card_box_one } = downloadStyle();
 
 const infoCard = [
    {

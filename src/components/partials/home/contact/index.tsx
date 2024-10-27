@@ -6,15 +6,15 @@ import React from 'react';
 import { TitleSubtitle } from './title-subtitle';
 import { ContactForm } from './contactForm';
 
-const { section } = contact();
+const { section, container } = contact();
 
 export function Contact() {
    return (
       <section className={section()}>
-         <Container flex_direction="column">
+         <div className={container()}>
             <TitleSubtitle />
             <ContactForm />
-         </Container>
+         </div>
       </section>
    );
 }

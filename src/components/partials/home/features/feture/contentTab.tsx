@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import { contentTab, featuresTab, imageTab } from '../style';
+import { contentTab, featuresTab, imageBox } from '../style';
 import { title, text } from '../../homeStyles';
 import { CTA } from '@/components/global/componentsGlobal';
 import React from 'react';
 import { TabContainer } from './tab-container';
 
 const { content_box } = featuresTab();
+const { box, img } = imageBox();
 
 const content = [
    {
@@ -30,8 +31,8 @@ export function ContentTab({ value }: { value: number }) {
       <>
          {content.map((data, i) => (
             <TabContainer key={i} tab="content" isActiveTab={i === value}>
-               <div className={imageTab()}>
-                  <Image src={data.image} fill className="!relative" alt="" />
+               <div className={box()}>
+                  <Image src={data.image} fill className={img()} alt="" />
                </div>
                <div className={content_box()}>
                   <h3 className={title({ size: 'subtitle' })}>{data.title}</h3>

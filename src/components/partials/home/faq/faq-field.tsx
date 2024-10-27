@@ -1,11 +1,11 @@
 'use client';
 
 import { ChevronDown } from 'lucide-react';
-import { faq } from './style';
+import { faqStyle } from './style';
 import React from 'react';
 import { FAQFieldProps } from './interface';
 
-const { faq_field, question_faq, answer_faq, arrow } = faq({
+const { faq_field, question_faq, answer_faq, arrow } = faqStyle({
    answer: 'hidden',
 });
 

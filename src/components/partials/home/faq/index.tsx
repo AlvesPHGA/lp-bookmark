@@ -1,21 +1,21 @@
 import { Container, CTA } from '@/components/global/componentsGlobal';
 import { Content } from './content';
 import { FAQContent } from './faq-content';
-import { faq } from './style';
+import { faqStyle } from './style';
 
-const { faq_box } = faq();
+const { faq, container, faq_box } = faqStyle();
 
 export function FAQ() {
    return (
-      <section className="py-24 lg:py-20">
-         <Container flex_direction="column">
+      <section className={faq()}>
+         <div className={container()}>
             <Content />
 
             <div className={faq_box()}>
                <FAQContent />
                <CTA type="small">More Info</CTA>
             </div>
-         </Container>
+         </div>
       </section>
    );
 }

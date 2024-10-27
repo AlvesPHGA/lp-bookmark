@@ -6,7 +6,7 @@ const { title, text_box } = intro();
 
 export function ContentComponent() {
    return (
-      <div className="w-5/12 md:w-[50%]">
+      <div className="w-5/12 md:w-[50%] ml:w-full ml:text-center">
          <h1 className={title()}>A Simple Bookmark Manager</h1>
          <div className={text_box()}>
             <p className={text()}>
@@ -15,7 +15,7 @@ export function ContentComponent() {
                for free.
             </p>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 ml:justify-center">
                <CTA type="blue">Get it on Chrome</CTA>
                <CTA type="gray">Get it on Firefox</CTA>
             </div>

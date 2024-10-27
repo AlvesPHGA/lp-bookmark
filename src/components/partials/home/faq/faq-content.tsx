@@ -1,7 +1,5 @@
 'use client';
 
-import { ChevronDown } from 'lucide-react';
-import { faq } from './style';
 import React from 'react';
 import { FAQField } from './faq-field';
 

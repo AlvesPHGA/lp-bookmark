@@ -1,12 +1,16 @@
 import Button from '@/components/form/button';
 import { Container, Nav } from '../componentsGlobal';
 import Image from 'next/image';
+import { Menu } from 'lucide-react';
+import { headerStyle, menu } from './style';
+
+const { header, container, image, nav } = headerStyle();
 
 export default function Header() {
    return (
-      <header className="py-5 md:py-4">
-         <Container items_position="center">
-            <div className="h-7 w-40 relative">
+      <header className={header()}>
+         <div className={container()}>
+            <div className={image()}>
                <Image
                   src="./logo-bookmark.svg"
                   alt="logo Bookmark"
@@ -14,11 +18,12 @@ export default function Header() {
                   className="object-fill"
                />
             </div>
-            <div className="flex gap-7 items-center md:gap-10">
+            <Menu className={menu()} />
+            <div className={nav()}>
                <Nav links="header" />
                <Button place="header">Login</Button>
             </div>
-         </Container>
+         </div>
       </header>
    );
 }

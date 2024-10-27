@@ -6,7 +6,7 @@ export const buttonStyle = tv({
    variants: {
       place: {
          header: 'uppercase px-6 py-1',
-         contact: 'h-[45px] px-7 hover:bg-white',
+         contact: 'h-[45px] px-7 hover:bg-white ml:block ml:w-full',
       },
 
       status: {

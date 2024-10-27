@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const container = tv({
-   base: 'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6',
+   base: 'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6 ml:px-4',
 
    variants: {
       items_position: {
@@ -11,6 +11,10 @@ export const container = tv({
 
       flex_direction: {
          column: 'flex-col',
+      },
+
+      col: {
+         footer: 'ml:flex-col',
       },
    },
 
@@ -35,14 +39,15 @@ export const blueBack = tv({
 
    variants: {
       position: {
-         intro: 'right-0 rounded-bl-[10rem]',
-         features: 'w-[46%] left-0 rounded-br-[10rem] bottom-20',
+         intro: 'right-0 rounded-bl-[10rem] ml:top-32 ml:w-[340px] ml:h-56 ml:rounded-bl-[5rem]',
+         features:
+            'w-[46%] left-0 rounded-br-[10rem] bottom-20 ml:bottom-[340px] ml:w-[280px] ml:rounded-br-[5rem] ml:h-56',
       },
    },
 });
 
 export const cta = tv({
-   base: 'block w-fit px-5 py-2  font-medium rounded-md  text-base drop-shadow-lg border  hover:bg-transparent  transition md:px-2 md:py-2',
+   base: 'block w-fit px-5 py-2  font-medium rounded-md  text-base drop-shadow-lg  hover:bg-transparent  transition md:px-2 md:py-2',
 
    variants: {
       type: {

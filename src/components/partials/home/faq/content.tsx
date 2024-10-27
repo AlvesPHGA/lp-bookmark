@@ -1,7 +1,7 @@
 import { text, title } from '../homeStyles';
-import { faq } from './style';
+import { faqStyle } from './style';
 
-const { content_box } = faq();
+const { content_box } = faqStyle();
 
 export function Content() {
    return (

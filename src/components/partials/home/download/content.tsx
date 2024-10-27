@@ -1,7 +1,7 @@
 import { text, title } from '../homeStyles';
-import { download } from './style';
+import { downloadStyle } from './style';
 
-const { content_box } = download();
+const { content_box } = downloadStyle();
 
 export function Content() {
    return (

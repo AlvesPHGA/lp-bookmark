@@ -1,16 +1,22 @@
 import Image from 'next/image';
-import { Container, Nav } from '../componentsGlobal';
+import { Nav } from '../componentsGlobal';
 import { Facebook, Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { footerStyle } from './footerStyle';
 
-const { footer, logo_nav_box, logo, social_media_box, social_media } =
-   footerStyle();
+const {
+   footer,
+   container,
+   logo_nav_box,
+   logo,
+   social_media_box,
+   social_media,
+} = footerStyle();
 
 export function Footer() {
    return (
       <footer className={footer()}>
-         <Container items_position="center">
+         <div className={container()}>
             <div className={logo_nav_box()}>
                <div className={logo()}>
                   <Image
@@ -33,7 +39,7 @@ export function Footer() {
                   <Twitter className={social_media()} />
                </Link>
             </div>
-         </Container>
+         </div>
       </footer>
    );
 }

@@ -39,7 +39,7 @@ export const blueBack = tv({
 
    variants: {
       position: {
-         intro: 'right-0 rounded-bl-[10rem] ml:top-32 ml:w-[340px] ml:h-56 ml:rounded-bl-[5rem]',
+         intro: 'right-0 rounded-bl-[10rem] ml:top-32 ml:w-[340px] ml:h-56 ml:rounded-bl-[5rem] mm:w-80 mm:h-48 mm:top-28',
          features:
             'w-[46%] left-0 rounded-br-[10rem] bottom-20 ml:bottom-[340px] ml:w-[280px] ml:rounded-br-[5rem] ml:h-56',
       },

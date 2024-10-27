@@ -16,7 +16,7 @@ export const title = tv({
 });
 
 export const text = tv({
-   base: 'text-slate-400 md:text-base',
+   base: 'text-slate-400 md:text-base mm:text-sm',
 
    variants: {
       size: {

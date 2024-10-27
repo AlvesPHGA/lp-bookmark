@@ -23,7 +23,7 @@ export function ContactForm() {
    return (
       <form action={action} method="post" className={form()}>
          <div
-            className={`space-y-0.5 bg-white rounded-md border w-80 ${
+            className={`space-y-0.5 bg-white rounded-md border w-80 ms:w-72 ${
                state.success ? '' : 'bg-red-500 border-red-500'
             }`}
          >

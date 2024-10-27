@@ -9,9 +9,9 @@ export const contact = tv({
          'text-white font-medium w-4/12 text-center space-y-5 mx-auto lg:space-y-3 ml:w-full',
       legend: 'uppercase text-base',
       form: 'flex items-start gap-3 mx-auto mt-10 ml:flex-col',
-      input_box: 'space-y-0.5 bg-white rounded-md border w-80',
+      input_box: 'space-y-0.5 bg-white rounded-md border w-80 ms:w-full',
       input_field: 'flex gap-2 items-center',
-      input: 'py-2 pl-2 w-64 border-none outline-none rounded-l-md',
+      input: 'py-2 pl-2 w-64 border-none outline-none rounded-l-md ms:w-56',
       alert: 'py-0.5 px-3 text-base text-white font-medium rounded-[50%] text-wrap bg-red-500 mr-1',
    },
 

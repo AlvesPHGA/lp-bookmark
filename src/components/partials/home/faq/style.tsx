@@ -2,7 +2,7 @@ import { tv } from 'tailwind-variants';
 
 export const faqStyle = tv({
    slots: {
-      faq: 'py-24 lg:py-20',
+      faq: 'py-24 lg:py-20 ms:py-16',
       container:
          'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6 ml:px-4 flex-col',
       content_box:
@@ -12,9 +12,9 @@ export const faqStyle = tv({
       faq_field:
          'pt-5 pb-1 border-t border-slate-400 last:border-b relative md:pt-3 md:pb-0.5 ml:pb-1',
       question_faq:
-         'text-blue-950 font-medium flex items-center justify-between pr-5 cursor-pointer hover:text-red-500 z-50 relative ml:px-2',
+         'text-blue-950 font-medium flex items-center justify-between pr-5 cursor-pointer hover:text-red-500 z-50 relative ml:px-2 ms:text-base ms:pb-1',
       arrow: 'size-10',
-      answer_faq: 'mt-5 text-slate-400',
+      answer_faq: 'mt-5 text-slate-400 ms:text-sm',
    },
 
    variants: {

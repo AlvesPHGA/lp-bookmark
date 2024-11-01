@@ -1,10 +1,13 @@
+import { baseContainer } from '@/components/global/componentsGlobalStyle';
 import { tv } from 'tailwind-variants';
 
 export const intro = tv({
    slots: {
-      base: 'pb-44 pt-48 relative lg:w-full lg:pb-28 lg:pt-32 md:py-16 ms:py-10',
-      container:
-         'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6 ml:px-4 items-center ml:flex-col-reverse ml:gap-16 mm:px-4',
+      base: 'pb-44 pt-48 relative lg:w-full lg:pb-28 lg:pt-32 md:py-16 ms:py-10 ml:z-0',
+      container: [
+         baseContainer(),
+         'items-center ml:flex-col-reverse ml:gap-16 mm:px-4',
+      ],
       title: 'text-5xl text-blue-950 font-medium lg:text-4xl md:text-3xl mm:text-2xl',
       text_box:
          'w-11/12 mt-8 space-y-6 lg:space-y-5 lg:mt-6 md:w-full ml:w-full',

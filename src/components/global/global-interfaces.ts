@@ -8,7 +8,10 @@ export interface ContainerProps
 
 export interface LinkProps
    extends React.ComponentProps<'a'>,
-      VariantProps<typeof link> {}
+      VariantProps<typeof link> {
+   active?: boolean;
+   closeMenuHamburger?: () => void;
+}
 
 export interface BlueBackProps
    extends React.ComponentProps<'div'>,

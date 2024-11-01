@@ -1,10 +1,10 @@
+import { baseContainer } from '@/components/global/componentsGlobalStyle';
 import { tv } from 'tailwind-variants';
 
 export const contact = tv({
    slots: {
       section: 'bg-blue-600 py-24 lg:py-16',
-      container:
-         'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6 ml:px-4 flex-col',
+      container: [baseContainer(), 'flex-col'],
       texts_box:
          'text-white font-medium w-4/12 text-center space-y-5 mx-auto lg:space-y-3 ml:w-full',
       legend: 'uppercase text-base',

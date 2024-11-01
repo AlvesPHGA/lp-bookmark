@@ -1,27 +1,42 @@
 import { tv } from 'tailwind-variants';
+import { baseContainer } from '../componentsGlobalStyle';
 
 export const headerStyle = tv({
    slots: {
-      header: 'py-5 md:h-20 md:flex justify-center items-center',
-      container:
-         'max-w-7xl flex justify-between mx-auto relative lg:max-w-4xl md:w-full md:px-6 ml:px-4 items-center',
+      header: 'py-5 ml:py-4 md:flex justify-center items-center',
+      container: [baseContainer(), 'items-center'],
       image: 'h-7 w-40 relative',
-      hanburger: 'hidden ml:block p-1',
-      nav: 'flex gap-7 items-center md:gap-10 md:absolute md:flex-col md:w-full md:left-0 md:top-20 z-[100] md:bg-white md:h-[calc(100vh-80px)]',
-   },
-
-   variants: {
-      active: {
-         false: 'md:hidden',
-         true: 'md:flex',
-      },
-   },
-
-   defaultVariants: {
-      active: false,
+      hamburger: 'hidden ml:block p-1 relative z-[100]',
    },
 });
 
-export const menu = tv({
-   base: 'hidden ml:block',
+const baseMenuStyle = tv({
+   base: 'gap-7 items-center',
+});
+
+export const menuStyle = tv({
+   slots: {
+      desktop: [baseMenuStyle(), 'flex'],
+      mobile: [
+         baseMenuStyle(),
+         'ml:flex-col ml:fixed ml:w-full ml:left-0 ml:top-0 ml:z-50 ml:bg-[rgba(23,37,84,0.9)] ml:h-[100vh] pt-5 text-white ml:px-4',
+      ],
+      navMobile: 'flex items-center flex-col w-full pt-5',
+      socialMediaBox: 'flex gap-5 items-center ml:mt-10',
+      socialMedia: 'size-11 text-white',
+   },
+
+   variants: {
+      menu: {
+         hidden: {
+            mobile: 'hidden',
+         },
+      },
+
+      active: {
+         true: {
+            mobile: 'flex',
+         },
+      },
+   },
 });

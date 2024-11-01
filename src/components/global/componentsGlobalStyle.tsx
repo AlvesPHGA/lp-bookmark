@@ -1,26 +1,7 @@
 import { tv } from 'tailwind-variants';
 
-export const container = tv({
+export const baseContainer = tv({
    base: 'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6 ml:px-4',
-
-   variants: {
-      items_position: {
-         initial: 'items-start',
-         center: 'items-center',
-      },
-
-      flex_direction: {
-         column: 'flex-col',
-      },
-
-      col: {
-         footer: 'ml:flex-col',
-      },
-   },
-
-   defaultVariants: {
-      items_position: 'initial',
-   },
 });
 
 export const link = tv({

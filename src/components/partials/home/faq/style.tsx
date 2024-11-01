@@ -1,10 +1,10 @@
+import { baseContainer } from '@/components/global/componentsGlobalStyle';
 import { tv } from 'tailwind-variants';
 
 export const faqStyle = tv({
    slots: {
       faq: 'py-24 lg:py-20 ms:py-16',
-      container:
-         'max-w-7xl flex justify-between mx-auto relative z-10 lg:max-w-4xl md:w-full md:px-6 ml:px-4 flex-col',
+      container: [baseContainer(), 'flex-col'],
       content_box:
          'space-y-6 w-5/12 mx-auto text-center md:space-y-4 md:w-3/5 ml:w-full',
       faq_box:

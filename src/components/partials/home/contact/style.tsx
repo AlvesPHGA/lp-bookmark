@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants';
 
 export const contact = tv({
    slots: {
-      section: 'bg-blue-600 py-24 lg:py-16',
+      section: 'bg-blue-600 py-24 lg:py-16 ml:z-0',
       container: [baseContainer(), 'flex-col'],
       texts_box:
          'text-white font-medium w-4/12 text-center space-y-5 mx-auto lg:space-y-3 ml:w-full',

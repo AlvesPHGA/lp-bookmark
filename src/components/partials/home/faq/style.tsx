@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants';
 
 export const faqStyle = tv({
    slots: {
-      faq: 'py-24 lg:py-20 ms:py-16',
+      faq: 'py-24 lg:py-20 ms:py-16 ml:z-0',
       container: [baseContainer(), 'flex-col'],
       content_box:
          'space-y-6 w-5/12 mx-auto text-center md:space-y-4 md:w-3/5 ml:w-full',

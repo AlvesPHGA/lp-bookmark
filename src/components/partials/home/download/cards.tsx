@@ -35,6 +35,7 @@ export function Cards() {
                         alt=""
                         width={100}
                         height={100}
+                        className="ml:z-0"
                      />
                      <h3 className={title({ size: 'subtitle_two' })}>
                         Add to {data.legend}

@@ -3,7 +3,8 @@ import { tv } from 'tailwind-variants';
 
 export const features = tv({
    slots: {
-      feature: 'py-44 relative lg:pt-24 lg:pb-32 md:pt-10 ml:pb-20 ms:py-10',
+      feature:
+         'py-44 relative lg:pt-24 lg:pb-32 md:pt-10 ml:pb-20 ms:py-10 ml:z-0',
       container: [baseContainer(), 'flex-col ml:w-full'],
       content: 'text-center space-y-5 md:space-y-3',
       text_box: 'w-5/12 text-center mx-auto md:w-4/6 ml:w-full',

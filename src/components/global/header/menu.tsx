@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { Facebook, Twitter, X } from 'lucide-react';
 import React from 'react';
 
-const { desktop, mobile, navMobile, socialMediaBox, socialMedia } = menuStyle({
+const { desktop, navMobile, socialMediaBox, socialMedia } = menuStyle({
    menu: 'hidden',
 });
 
@@ -39,16 +39,7 @@ export function MenuDesktop({ links }: LinkProps) {
 
 export function MenuMobile({ active, links }: LinkProps) {
    return (
-      <div className={mobile({ active })}>
-         <div className="h-7 w-40 relative mr-auto">
-            <Image
-               src="./logo-bookmark-footer.svg"
-               alt="logo Bookmark"
-               fill
-               className="object-fill"
-            />
-         </div>
-
+      <div className="py-10 space-y-10">
          <nav
             role="navigation"
             aria-label="menu principal"

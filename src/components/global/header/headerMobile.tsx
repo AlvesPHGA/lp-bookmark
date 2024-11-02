@@ -1,8 +1,11 @@
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
-import { headerStyle } from './style';
+import { headerStyle, menuStyle } from './style';
+import { MenuMobile } from './menu';
 
-const { image, hamburger } = headerStyle();
+const { headerMobile, intoHeaderMobile, image, hamburger, icon } =
+   headerStyle();
+const { onMenuMobile, offMenuMobile } = menuStyle({ menu: 'hidden' });
 
 interface HeaderMobileProps {
    menuMobile: () => void;
@@ -14,11 +17,11 @@ export default function HeaderMobile({
    active,
 }: HeaderMobileProps) {
    return (
-      <div className="w-full flex justify-between">
+      <div className={headerMobile()}>
          {active ? (
-            <div>
-               <div>
-                  <div className="h-7 w-40 relative">
+            <div className={onMenuMobile({ active })}>
+               <div className={intoHeaderMobile()}>
+                  <div className={image()}>
                      <Image
                         src="./logo-bookmark-footer.svg"
                         alt="logo Bookmark"
@@ -27,12 +30,13 @@ export default function HeaderMobile({
                      />
                   </div>
                   <button onClick={menuMobile} className={hamburger()}>
-                     <X className="size-8" />
+                     <X className={icon()} />
                   </button>
                </div>
+               <MenuMobile />
             </div>
          ) : (
-            <>
+            <div className={offMenuMobile()}>
                <div className={image()}>
                   <Image
                      src="./logo-bookmark.svg"
@@ -43,9 +47,9 @@ export default function HeaderMobile({
                </div>
 
                <button onClick={menuMobile} className={hamburger()}>
-                  <Menu className="size-8" />
+                  <Menu className={icon()} />
                </button>
-            </>
+            </div>
          )}
       </div>
    );

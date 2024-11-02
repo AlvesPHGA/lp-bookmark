@@ -39,7 +39,7 @@ export function MenuDesktop({ links }: LinkProps) {
 
 export function MenuMobile({ active, links }: LinkProps) {
    return (
-      <div className="py-10 space-y-10">
+      <div className="py-10 space-y-10 w-full">
          <nav
             role="navigation"
             aria-label="menu principal"

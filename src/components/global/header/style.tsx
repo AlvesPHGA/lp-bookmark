@@ -3,7 +3,7 @@ import { baseContainer } from '../componentsGlobalStyle';
 
 export const headerStyle = tv({
    slots: {
-      header: 'py-5 ml:py-4 md:flex justify-center items-center',
+      header: 'py-5 ml:py-4 md:flex justify-center items-center ml:px-4',
       container: [baseContainer(), 'items-center'],
       image: 'h-7 w-40 relative',
       hamburger: 'hidden ml:block p-1 relative z-[100]',

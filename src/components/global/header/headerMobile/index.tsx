@@ -14,6 +14,7 @@ export default function HeaderMobile() {
 
    React.useEffect(() => {
       if (active) document.body.style.overflow = 'hidden';
+      else document.body.style.overflow = 'initial';
    }, [active]);
 
    return (

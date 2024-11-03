@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { contentTab, featuresTab, imageBox } from '../style';
+import { featuresTab, imageBox } from '../style';
 import { title, text } from '../../homeStyles';
 import { CTA } from '@/components/global/componentsGlobal';
 import React from 'react';

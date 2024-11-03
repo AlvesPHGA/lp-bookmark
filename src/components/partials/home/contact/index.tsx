@@ -1,6 +1,5 @@
 'use client';
 
-import { Container } from '@/components/global/componentsGlobal';
 import { contact } from './style';
 import React from 'react';
 import { TitleSubtitle } from './title-subtitle';

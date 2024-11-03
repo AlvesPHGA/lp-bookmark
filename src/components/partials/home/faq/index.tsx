@@ -1,4 +1,4 @@
-import { Container, CTA } from '@/components/global/componentsGlobal';
+import { CTA } from '@/components/global/componentsGlobal';
 import { Content } from './content';
 import { FAQContent } from './faq-content';
 import { faqStyle } from './style';

@@ -1,4 +1,3 @@
-import { Container } from '@/components/global/componentsGlobal';
 import { Content } from './content';
 import { Cards } from './cards';
 import { downloadStyle } from './style';

@@ -55,7 +55,7 @@ export const contentTab = tv({
 
 export const imageBox = tv({
    slots: {
-      box: 'w-[50rem] h-[37.5rem] first:h-[25rem] lg:w-[440px] lg:first:h-[320px] lg:h-[380px] md:w-80 md:first:h-60 md:h-52 ml:w-80 ml:mx-auto ml:h-fit mm:w-full ms:first:h-56 ms:h-fit',
-      img: '!relative ml:object-fill',
+      box: 'w-full h-[37.5rem] first:h-[25rem] lg:w-[440px] lg:first:h-[320px] lg:h-[380px] md:w-80 md:first:h-60 md:h-52 ml:w-80 ml:mx-auto ml:h-fit mm:w-full ms:first:h-56 ms:h-fit',
+      img: '!relative object-fill',
    },
 });

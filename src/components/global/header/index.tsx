@@ -12,13 +12,7 @@ import HeaderMobile from './headerMobile';
 const { header } = headerStyle();
 
 export default function Header() {
-   const [active, setActive] = React.useState(false);
-
    const mobile = useMedia('(max-width: 425px)');
-
-   function menuMobile() {
-      setActive(!active);
-   }
 
    return (
       <header className={header()}>

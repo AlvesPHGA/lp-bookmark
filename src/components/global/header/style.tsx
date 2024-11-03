@@ -30,7 +30,7 @@ export const menuMobileStyle = tv({
    slots: {
       onMenuMobile: [
          baseMenuStyle(),
-         'ml:flex-col ml:fixed ml:w-full ml:left-0 ml:top-0 ml:z-50 ml:bg-[rgba(23,37,84,0.9)] ml:h-[100vh] pt-5 text-white ml:px-4',
+         'ml:flex-col ml:fixed ml:w-full ml:left-0 ml:top-0 ml:z-50 ml:bg-[rgba(23,37,84,0.9)] ml:h-[100vh] pt-5 text-white ml:px-4 overflow-y-hidden',
       ],
 
       offMenuMobile: 'flex items-center justify-between w-full',

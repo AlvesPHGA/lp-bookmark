@@ -1,12 +1,7 @@
 import React from 'react';
 import { blueBack, cta, link } from './componentsGlobalStyle';
 import Link from 'next/link';
-import {
-   BlueBackProps,
-   ContainerProps,
-   CTAProps,
-   LinkProps,
-} from './global-interfaces';
+import { BlueBackProps, CTAProps, LinkProps } from './global-interfaces';
 
 export function Nav({ links }: LinkProps) {
    return (

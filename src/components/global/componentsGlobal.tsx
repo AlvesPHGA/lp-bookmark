@@ -1,5 +1,5 @@
 import React from 'react';
-import { blueBack, container, cta, link } from './componentsGlobalStyle';
+import { blueBack, cta, link } from './componentsGlobalStyle';
 import Link from 'next/link';
 import {
    BlueBackProps,
@@ -7,18 +7,6 @@ import {
    CTAProps,
    LinkProps,
 } from './global-interfaces';
-
-export function Container({
-   items_position,
-   flex_direction,
-   children,
-}: ContainerProps) {
-   return (
-      <div className={container({ items_position, flex_direction })}>
-         {children}
-      </div>
-   );
-}
 
 export function Nav({ links }: LinkProps) {
    return (

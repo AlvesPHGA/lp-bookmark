@@ -6,10 +6,10 @@ import { headerStyle } from './style';
 import React from 'react';
 import useMedia from '@/hook/use-media';
 import { MenuDesktop, MenuMobile } from './menu';
-import HeaderMobile from './headerMobile';
 import HeaderDesktop from './headerDesktop';
+import HeaderMobile from './headerMobile';
 
-const { header, container, image, hamburger } = headerStyle();
+const { header } = headerStyle();
 
 export default function Header() {
    const [active, setActive] = React.useState(false);
@@ -22,11 +22,7 @@ export default function Header() {
 
    return (
       <header className={header()}>
-         {mobile ? (
-            <HeaderMobile menuMobile={menuMobile} active={active} />
-         ) : (
-            <HeaderDesktop />
-         )}
+         {mobile ? <HeaderMobile /> : <HeaderDesktop />}
       </header>
    );
 }
